@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component matches the snapshot with an icon 1`] = `
+<DocumentFragment>
+  <div
+    class="chakra-form-control css-zol2i8"
+    role="group"
+  >
+    <div
+      class="css-h38yef"
+    >
+      <div
+        class="css-jes1ca"
+      >
+        <svg
+          class="chakra-icon css-vpsn6m"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+          />
+        </svg>
+        <label
+          class="chakra-form__label css-1bat1t4"
+          for="field-:r6:"
+          id="field-:r6:-label"
+        >
+          Username
+        </label>
+      </div>
+      <div
+        class="css-1rr4qq7"
+      >
+        <input
+          class="chakra-input css-0"
+          id="field-:r6:"
+          placeholder="Enter your username"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TextField Component matches the snapshot without icon and error 1`] = `
+<DocumentFragment>
+  <div
+    class="chakra-form-control css-zol2i8"
+    role="group"
+  >
+    <div
+      class="css-h38yef"
+    >
+      <div
+        class="css-jes1ca"
+      >
+        <label
+          class="chakra-form__label css-1bat1t4"
+          for="field-:r5:"
+          id="field-:r5:-label"
+        >
+          Username
+        </label>
+      </div>
+      <div
+        class="css-1rr4qq7"
+      >
+        <input
+          class="chakra-input css-0"
+          id="field-:r5:"
+          placeholder="Enter your username"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

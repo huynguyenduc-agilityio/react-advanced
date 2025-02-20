@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination render Should match snapshot. 1`] = `
+<div>
+  <div
+    class="css-17b3yfg"
+  >
+    <div
+      class="css-70qvj9"
+    >
+      <p
+        class="chakra-text css-1opt6y0"
+      >
+        1 - 0 of 0
+      </p>
+    </div>
+    <div
+      class="css-1guqm6j"
+    >
+      <div
+        class="css-guqklo"
+      >
+        <p
+          class="chakra-text css-7kl06l"
+        >
+          Rows per page:
+        </p>
+        <div
+          class="chakra-select__wrapper css-2a4yzx"
+        >
+          <select
+            aria-label="rows-per-page"
+            class="chakra-select css-1hw8hmn"
+            title="select-limit"
+          >
+            <option
+              selected=""
+              value="10"
+            >
+              10
+            </option>
+            <option
+              value="25"
+            >
+              25
+            </option>
+            <option
+              value="50"
+            >
+              50
+            </option>
+            <option
+              value="100"
+            >
+              100
+            </option>
+          </select>
+          <div
+            class="chakra-select__icon-wrapper css-14r9pbu"
+          >
+            <svg
+              aria-hidden="true"
+              class="chakra-select__icon"
+              focusable="false"
+              role="presentation"
+              style="width: 1em; height: 1em; color: currentColor;"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1rj6x3l"
+      >
+        <button
+          class="chakra-button css-13l93oc"
+          disabled=""
+          title="prev-button"
+          type="button"
+        >
+          <svg
+            class="chakra-icon css-1fa4wo0"
+            fill="none"
+            focusable="false"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 19 5 12 12 5"
+            />
+          </svg>
+        </button>
+        <button
+          class="chakra-button css-13l93oc"
+          disabled=""
+          title="next-button"
+          type="button"
+        >
+          <svg
+            class="chakra-icon css-1fa4wo0"
+            fill="none"
+            focusable="false"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 5 19 12 12 19"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
