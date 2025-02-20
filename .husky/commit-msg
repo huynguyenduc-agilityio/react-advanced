@@ -1,0 +1,2 @@
+cd ./advanced-practice
+npx --no -- commitlint --edit ${1}

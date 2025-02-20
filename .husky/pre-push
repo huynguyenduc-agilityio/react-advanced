@@ -1,0 +1,2 @@
+cd ./advanced-practice
+pnpm test -- -u && pnpm build

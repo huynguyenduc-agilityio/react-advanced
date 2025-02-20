@@ -1,0 +1,2 @@
+cd ./advanced-practice
+npx lint-staged
