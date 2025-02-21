@@ -33,6 +33,7 @@ exports[`Table Component should render correctly 1`] = `
                 class="chakra-checkbox css-1elxtiq"
               >
                 <input
+                  aria-label="Checkbox Indeterminate"
                   class="chakra-checkbox__input"
                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
                   type="checkbox"
@@ -222,6 +223,7 @@ exports[`Table Component should render correctly 1`] = `
                 class="chakra-checkbox css-1elxtiq"
               >
                 <input
+                  aria-label="Checkbox 1"
                   class="chakra-checkbox__input"
                   style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
                   type="checkbox"

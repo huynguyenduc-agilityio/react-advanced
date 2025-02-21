@@ -21,7 +21,11 @@ const TableRow = ({ id, cells = [], isSelected, onSelect }: TableRowProps) => {
     <Tr>
       <Td py={4} pl={9} pr={0} textAlign="center">
         <Flex>
-          <Checkbox isChecked={isSelected} onChange={handleSelectRecord} />
+          <Checkbox
+            aria-label={`Checkbox ${id}`}
+            isChecked={isSelected}
+            onChange={handleSelectRecord}
+          />
         </Flex>
       </Td>
       {cells.map((cell) => (

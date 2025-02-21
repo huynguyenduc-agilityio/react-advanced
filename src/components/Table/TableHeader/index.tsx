@@ -22,6 +22,7 @@ const TableHeader = ({
     <Th py={4} pl={9} pr={0} textAlign="center">
       <Flex>
         <Checkbox
+          aria-label="Checkbox Indeterminate"
           isChecked={isAllSelected}
           isIndeterminate={isIndeterminate}
           onChange={(e) => onSelectAll(e.target.checked)}
