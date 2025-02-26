@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fallback Component should render correctly 1`] = `
+exports[`Fallback Component should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

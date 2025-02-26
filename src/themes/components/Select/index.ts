@@ -3,7 +3,7 @@ import { ComponentStyleConfig } from '@chakra-ui/react';
 export const Select: ComponentStyleConfig = {
   baseStyle: {
     field: {
-      fontSize: 'xs',
+      fontSize: 'sm',
       border: '0.6px solid',
       borderRadius: '4px',
       borderColor: 'slateBlue',

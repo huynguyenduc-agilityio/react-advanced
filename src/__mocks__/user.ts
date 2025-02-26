@@ -1,7 +1,9 @@
-import { IUserModel } from '@/types';
-
 // Icons
-import { KebabIcon, HeartIcon, UserGroupIcon, UserIcon } from '@/icons';
+import { KebabIcon, HeartIcon, UserGroupIcon, UserIcon } from '@/components';
+
+// Types
+
+import { IUserModel, NotificationType, Status as StatusEnum } from '@/types';
 
 export const mockInitialValuesUser: IUserModel = {
   name: 'John Doe',
@@ -13,7 +15,7 @@ export const mockInitialValuesUser: IUserModel = {
   company: 'Tech Corp',
   description: 'Passionate about coding.',
   teamName: 'Google',
-  rank: 'CEO & Founder',
+  rank: 'marketing',
   office: 'New York, NY',
   teamMail: 'dashdark@gmail.com',
   payment: 'VISA',
@@ -21,6 +23,15 @@ export const mockInitialValuesUser: IUserModel = {
   billAddress: '601 4th St #103',
   state: 'Los Angeles',
   zipCode: '90001',
+  mentionMessage: NotificationType.InApp,
+  replyMessage: NotificationType.Email,
+  assignTask: NotificationType.Email,
+  taskOverdue: NotificationType.InApp,
+  dailySummary: NotificationType.Email,
+  weeklySummary: NotificationType.InApp,
+  monthlySummary: NotificationType.InApp,
+  annuallySummary: NotificationType.Email,
+  status: StatusEnum.Online,
 };
 
 export const mockUsers = {

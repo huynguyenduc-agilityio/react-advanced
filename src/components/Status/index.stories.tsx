@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-// Enums
-import { Status as StatusEnum } from '@/enums';
+// Types
+import { Status as StatusEnum } from '@/types';
 
 // Components
 import Status from '.';

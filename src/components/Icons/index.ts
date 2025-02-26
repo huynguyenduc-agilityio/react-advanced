@@ -14,3 +14,5 @@ export * from './HomeIcon';
 export * from './IntegrateIcon';
 export * from './MoneyIcon';
 export * from './WebflowIcon';
+export * from './CardIcon';
+export * from './SortIcon';

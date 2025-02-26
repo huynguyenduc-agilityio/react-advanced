@@ -57,6 +57,7 @@ const Navbar = ({ children }: { children: ReactNode }) => {
               boxSize="22px"
               cursor="pointer"
               onClick={handleToggleDrawer}
+              data-testid="toggle-icon"
             />
           ) : (
             <Image
@@ -65,6 +66,7 @@ const Navbar = ({ children }: { children: ReactNode }) => {
               boxSize="26px"
               cursor="pointer"
               onClick={handleToggleDrawer}
+              data-testid="toggle-logo"
             />
           )}
         </VStack>

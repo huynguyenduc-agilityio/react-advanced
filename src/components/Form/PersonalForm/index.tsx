@@ -11,7 +11,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { valibotResolver } from '@hookform/resolvers/valibot';
 
 // Icons
-import { PhotoIcon } from '@/icons';
+import { PhotoIcon } from '@/components';
 import { HiMiniPencil } from 'react-icons/hi2';
 
 // Constants
@@ -20,8 +20,8 @@ import { BASIC_FORM_FIELD, PERSONAL_FORM_FIELD } from '@/constants';
 // Types
 import { IUserPersonalInfo } from '@/types';
 
-// Schemas
-import { personalFormSchema } from '@/schemas';
+// Utils
+import { isFormDirty, personalFormSchema } from '@/utils';
 
 // Stores
 import { useUserFormActions } from '@/stores';
@@ -36,7 +36,7 @@ export interface IPersonalForm {
 }
 
 const PersonalForm = ({ initialValues }: IPersonalForm) => {
-  const { setUserData, setFormValidity } = useUserFormActions();
+  const { setUserData, setFormValidity, setIsDirty } = useUserFormActions();
   const {
     name = '',
     email = '',
@@ -77,22 +77,19 @@ const PersonalForm = ({ initialValues }: IPersonalForm) => {
 
   useEffect(() => {
     if (initialValues) {
-      // Sanitize `initialValues` by ensuring that all fields have a default value.
-      // If any field is `null` or `undefined`, it will be replaced with an empty string ('').
-      const sanitizedValues = Object.fromEntries(
-        Object.entries(initialValues).map(([key, value]) => [key, value ?? '']),
-      ) as IUserPersonalInfo;
-
-      // Reset the form with the sanitized initial values.
-      reset(sanitizedValues);
+      reset(initialValues);
     }
 
     const subscription = watch((data) => {
       setUserData(data); // Initialize with current form data
+
+      if (initialValues) {
+        setIsDirty(isFormDirty(data, initialValues));
+      } else setIsDirty(true);
     });
 
     return () => subscription.unsubscribe(); // Cleanup on unmount
-  }, [initialValues, reset, watch, setUserData]);
+  }, [initialValues, reset, setIsDirty, setUserData, watch]);
 
   useEffect(() => {
     setFormValidity('personal', formState.isValid);

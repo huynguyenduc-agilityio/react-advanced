@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
-// Enums
-import { Status as StatusEnum } from '@/enums';
+// Types
+import { Status as StatusEnum } from '@/types';
 
 // Component
 import Status from '@/components/Status';
@@ -17,5 +17,11 @@ describe('Status Component', () => {
     render(<Status type={StatusEnum.Offline} />);
 
     expect(screen.getByText('Offline')).toBeInTheDocument();
+  });
+
+  it('should match snapshot', () => {
+    const { container } = render(<Status />);
+
+    expect(container).toMatchSnapshot();
   });
 });

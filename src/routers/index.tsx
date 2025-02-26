@@ -5,6 +5,7 @@ import {
   Navigate,
   Route,
 } from 'react-router-dom';
+import { Center } from '@chakra-ui/react';
 
 // Constants
 import { PUBLIC_ROUTERS } from '@/constants';
@@ -38,7 +39,13 @@ export const router = createBrowserRouter(
             key={path}
             path={path}
             element={
-              <Suspense fallback={<Fallback />}>
+              <Suspense
+                fallback={
+                  <Center h="100vh">
+                    <Fallback />
+                  </Center>
+                }
+              >
                 <Component />
               </Suspense>
             }

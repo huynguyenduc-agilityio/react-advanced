@@ -29,7 +29,7 @@ const mockTabs = [
 ];
 
 describe('Tabs component', () => {
-  it('renders correctly and matches snapshot (only tabs structure)', () => {
+  it('should match snapshot', () => {
     const { container } = render(<Tabs tabs={mockTabs} />);
 
     expect(container.firstChild).toMatchSnapshot();

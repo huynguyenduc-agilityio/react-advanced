@@ -30,10 +30,7 @@ import {
 } from '@/constants';
 
 // Types
-import { TDataSource } from '@/types';
-
-// Enums
-import { Status as StatusEnum, ToastStatus } from '@/enums';
+import { TDataSource, ToastStatus, Status as StatusEnum } from '@/types';
 
 // Mocks
 import { MOCK_SUMMARY_DASHBOARD } from '@/__mocks__';
@@ -85,6 +82,8 @@ const Dashboard = () => {
       searchParams.delete('search');
       setSearchParams(searchParams);
     }
+
+    setCurrentPage(DEFAULT_CURRENT_PAGE);
   };
 
   const handleDelete = useCallback(
@@ -123,6 +122,7 @@ const Dashboard = () => {
         title: 'Name',
         key: 'name',
         icon: FaUser,
+        isSort: true,
         renderBody: ({ name, avatar, email }: TDataSource) => (
           <Flex p={0} gap={1} border="none" fontSize="xs" alignItems="center">
             <Avatar size="sm" name={name as string} src={avatar as string} />
@@ -146,21 +146,25 @@ const Dashboard = () => {
         title: 'Phone',
         key: 'phone',
         icon: FaPhoneAlt,
+        isSort: true,
       },
       {
         title: 'Location',
         key: 'location',
         icon: HiMapPin,
+        isSort: true,
       },
       {
         title: 'Company',
         key: 'company',
         icon: IoBagSharp,
+        isSort: true,
       },
       {
         title: 'Status',
         key: 'status',
         icon: PiCheckSquareFill,
+        isSort: true,
         renderBody: ({ status }) => <Status type={status as StatusEnum} />,
       },
       {
@@ -241,7 +245,7 @@ const Dashboard = () => {
       <Pagination
         currentPage={currentPage}
         pageSize={pageSize}
-        totalRecords={users?.meta?.pagination?.total ?? 0}
+        totalRecords={users?.meta?.pagination?.total}
         isDisabledPrev={isDisablePrev}
         isDisableNext={isDisableNext}
         onPageChange={handleChangePage}

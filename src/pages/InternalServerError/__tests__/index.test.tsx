@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import InternalServerError from '..';
 
 describe('InternalServerError Page', () => {
-  test('should render correctly', () => {
+  test('should match snapshot', () => {
     const view = render(
       <BrowserRouter>
         <InternalServerError />

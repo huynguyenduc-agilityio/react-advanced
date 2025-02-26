@@ -5,11 +5,12 @@ import TextField from '.';
 import { FaUser } from 'react-icons/fa';
 
 const defaultProps = {
-  label: 'Username',
-  placeholder: 'Enter your username',
+  label: 'Full name',
+  placeholder: 'Please enter name',
   isError: false,
   errorMessages: '',
   isRequired: false,
+  icon: FaUser,
   onChange: () => {},
 };
 
@@ -34,11 +35,7 @@ export default meta;
 type Story = StoryObj<typeof TextField>;
 
 export const Default: Story = {
-  args: {
-    ...defaultProps,
-    icon: FaUser,
-    placeholder: 'Please enter name',
-  },
+  args: { ...defaultProps },
 };
 
 export const WithError: Story = {
@@ -49,11 +46,10 @@ export const WithError: Story = {
   },
 };
 
-export const WithIcon: Story = {
+export const WithoutIcon: Story = {
   args: {
     ...defaultProps,
-    icon: FaUser,
-    placeholder: 'Please enter name',
+    icon: undefined,
   },
 };
 
@@ -61,7 +57,5 @@ export const RequiredField: Story = {
   args: {
     ...defaultProps,
     isRequired: true,
-    placeholder: 'Please enter email',
-    label: 'Email',
   },
 };

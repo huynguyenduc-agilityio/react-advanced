@@ -1,17 +1,19 @@
+import { fonts } from '@/themes/bases/typography';
 import { defineStyleConfig } from '@chakra-ui/react';
 
 export const Button = defineStyleConfig({
   baseStyle: {
-    fontWeight: 'normal',
     borderRadius: 'base',
-    fontSize: 'xs',
+    fontSize: 'sm',
+    fontFamily: fonts.body,
+    fontWeight: 500,
     _hover: {
       color: 'white',
     },
   },
   sizes: {
     md: {
-      fontSize: 'xs',
+      fontSize: 'sm',
     },
   },
 

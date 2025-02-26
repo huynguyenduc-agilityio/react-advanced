@@ -1,6 +1,6 @@
 import { memo, ReactNode } from 'react';
-import { HiDotsVertical } from 'react-icons/hi';
-import { Box, Flex, IconButton, Text } from '@chakra-ui/react';
+import { VscKebabVertical } from 'react-icons/vsc';
+import { Box, Flex, Icon, Text } from '@chakra-ui/react';
 
 export interface CardSummaryProps {
   title: string;
@@ -29,12 +29,7 @@ const CardSummary = ({ title, total, icon }: CardSummaryProps) => {
               {total}
             </Text>
           </Box>
-          <IconButton
-            aria-label="More options"
-            icon={<HiDotsVertical />}
-            variant="icon"
-            color="white"
-          />
+          <Icon as={VscKebabVertical} color="white" boxSize="20px" />
         </Flex>
       </Flex>
     </Box>

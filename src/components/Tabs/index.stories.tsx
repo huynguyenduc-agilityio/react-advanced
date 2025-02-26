@@ -9,7 +9,7 @@ import { RiNotification2Fill } from 'react-icons/ri';
 // Components
 import Tabs from '.';
 
-const TABS_LIST = [
+const TAB_LIST = [
   {
     label: 'Personal Information',
     icon: HiMiniPencil,
@@ -61,7 +61,7 @@ const TABS_LIST = [
 ];
 
 const defaultProps = {
-  tabs: TABS_LIST,
+  tabs: TAB_LIST,
 };
 
 const meta = {

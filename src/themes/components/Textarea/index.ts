@@ -2,22 +2,23 @@ import { defineStyleConfig } from '@chakra-ui/react';
 
 export const Textarea = defineStyleConfig({
   baseStyle: {
-    fontSize: 'xs',
+    fontSize: 'sm',
     color: 'white',
+    lineHeight: '14px',
+    p: '16px',
     border: '0.6px solid',
     borderRadius: '4px',
     borderColor: 'slateBlue',
     backgroundColor: 'midNightBlue',
-    maxHeight: '200px',
-    field: {
-      _placeholder: {
-        color: 'pastelBlue',
-      },
-      _invalid: {
+    minH: '90px',
+    maxH: '200px',
+    _placeholder: {
+      color: 'pastelBlue',
+    },
+    _invalid: {
+      borderColor: 'red',
+      _focus: {
         borderColor: 'red',
-        _focus: {
-          borderColor: 'red',
-        },
       },
     },
     _hover: {

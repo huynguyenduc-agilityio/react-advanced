@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound Page should render correctly 1`] = `
+exports[`NotFound Page should match snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

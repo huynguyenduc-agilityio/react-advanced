@@ -77,6 +77,7 @@ describe('UserForm Component', () => {
     (useUserForm as jest.Mock).mockReturnValue({
       user: {},
       userValidity: true,
+      isDirty: true,
     });
 
     (useUserFormActions as jest.Mock).mockReturnValue({

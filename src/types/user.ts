@@ -1,4 +1,4 @@
-import { NotificationType } from '@/enums';
+import { NotificationType } from '@/types';
 
 export interface IUserPersonalInfo {
   name: string;

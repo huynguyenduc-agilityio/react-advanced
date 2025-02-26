@@ -5,13 +5,14 @@ import {
   SwitchProps,
   Text,
 } from '@chakra-ui/react';
+import { forwardRef } from 'react';
 
 // Icons
 import { HiMail } from 'react-icons/hi';
-import { DevicePhoneIcon } from '@/icons';
+import { DevicePhoneIcon } from '@/components';
 
-// Enums
-import { NotificationType } from '@/enums';
+// Types
+import { NotificationType } from '@/types';
 
 type TNotificationSwitchProps = Omit<SwitchProps, 'onChange'> & {
   name?: string;
@@ -19,12 +20,10 @@ type TNotificationSwitchProps = Omit<SwitchProps, 'onChange'> & {
   onChange: (value: NotificationType) => void;
 };
 
-const NotificationSwitch = ({
-  name,
-  value = NotificationType.InApp,
-  onChange,
-  ...rest
-}: TNotificationSwitchProps) => {
+const NotificationSwitch = forwardRef<
+  HTMLInputElement,
+  TNotificationSwitchProps
+>(({ name, value = NotificationType.InApp, onChange, ...rest }, ref) => {
   const isChecked = value === NotificationType.Email;
 
   const handleToggle = () => {
@@ -58,6 +57,7 @@ const NotificationSwitch = ({
         <Text fontSize="sm">In-app</Text>
       </Flex>
       <ChakraSwitch
+        ref={ref}
         hidden
         isChecked={isChecked}
         onChange={handleToggle}
@@ -80,6 +80,6 @@ const NotificationSwitch = ({
       </Flex>
     </Flex>
   );
-};
+});
 
 export default NotificationSwitch;

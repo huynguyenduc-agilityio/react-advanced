@@ -1,8 +1,6 @@
 import { fireEvent, render, waitFor } from '@testing-library/react';
-
-import { useUploadImage } from '@/hooks';
-
 import userEvent from '@testing-library/user-event';
+import { useUploadImage } from '@/hooks';
 import UploadImage from '..';
 
 jest.mock('@/hooks', () => ({
@@ -42,14 +40,13 @@ describe('UploadImage Component', () => {
   });
 
   it('opens file input when clicking on the upload area', async () => {
-    const { getByTestId } = render(
+    const { getByTestId, getByText } = render(
       <UploadImage onFileChange={mockOnFileChange} />,
     );
-
     const fileInput = getByTestId('file-input');
     jest.spyOn(fileInput, 'click');
 
-    await userEvent.click(getByTestId('file-input'));
+    await userEvent.click(getByText(/Click to upload/i));
     expect(fileInput.click).toHaveBeenCalled();
   });
 
@@ -72,5 +69,13 @@ describe('UploadImage Component', () => {
       expect(mockHandleUploadImage).toHaveBeenCalledWith(file),
     );
     expect(mockOnFileChange).toHaveBeenCalledWith(mockImageUrl);
+  });
+
+  it('should match snapshot', () => {
+    const { container } = render(
+      <UploadImage onFileChange={mockOnFileChange} />,
+    );
+
+    expect(container).toMatchSnapshot();
   });
 });

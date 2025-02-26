@@ -21,17 +21,19 @@ interface IFormState extends IInitialState {
     team: boolean;
     bill: boolean;
   };
+  isDirty: boolean;
   actions: {
     setUserData: (data: Partial<IUserModel>) => void;
     setFormValidity: (
       form: 'personal' | 'team' | 'bill',
       isValid: boolean,
     ) => void;
+    setIsDirty: (isDirty: boolean) => void;
     resetUserForm: () => void;
   };
 }
 
-const useFormStore = create<IFormState>()(
+export const useFormStore = create<IFormState>()(
   devtools((set) => ({
     ...initialState,
     formValidity: {
@@ -56,12 +58,19 @@ const useFormStore = create<IFormState>()(
               state.formValidity.bill;
           }),
         ),
+      setIsDirty: (isDirty) =>
+        set(
+          produce((state) => {
+            state.isDirty = isDirty;
+          }),
+        ),
       resetUserForm: () =>
         set(
           produce((state) => {
             state.user = {};
             state.formValidity = { personal: false, team: false, bill: false };
             state.userValidity = false;
+            state.isDirty = false;
           }),
         ),
     },

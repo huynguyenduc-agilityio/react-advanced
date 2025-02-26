@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination render Should match snapshot. 1`] = `
+exports[`Pagination render should match snapshot 1`] = `
 <div>
   <div
     class="css-17b3yfg"
@@ -30,7 +30,7 @@ exports[`Pagination render Should match snapshot. 1`] = `
         >
           <select
             aria-label="rows-per-page"
-            class="chakra-select css-1hw8hmn"
+            class="chakra-select css-eaifxg"
             title="select-limit"
           >
             <option

@@ -13,13 +13,10 @@ import {
 import { memo, useCallback, useMemo, useState } from 'react';
 
 // Types
-import { TDataSource, THeaderTable } from '@/types';
+import { TDataSource, THeaderTable, ToastStatus } from '@/types';
 
 // Constants
 import { ERROR_MESSAGES, SUCCESS_MESSAGES } from '@/constants';
-
-// Enums
-import { ToastStatus } from '@/enums';
 
 // Utils
 import { processTableData } from '@/utils';
@@ -148,7 +145,7 @@ const Table = ({
       {isDeleteMultipleLoading && (
         <Flex
           position="absolute"
-          inset={0} // Phủ kín `TableContainer`
+          inset={0}
           bg="rgba(0, 0, 0, 0.6)"
           alignItems="center"
           justifyContent="center"

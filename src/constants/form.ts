@@ -1,5 +1,5 @@
 // Icons
-import { WebIcon } from '@/icons';
+import { WebIcon } from '@/components/Icons';
 import { FaPhoneAlt, FaUser } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { HiMapPin } from 'react-icons/hi2';
@@ -32,7 +32,7 @@ export const BASIC_FORM_FIELD = [
     isRequired: true,
     ariaLabel: 'phone',
     icon: FaPhoneAlt,
-    placeholder: 'Please enter phone',
+    placeholder: '(123) 456-7890',
   },
   {
     label: 'Position',

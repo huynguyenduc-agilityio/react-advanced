@@ -13,8 +13,9 @@ describe('TextareaField component', () => {
     placeholder: 'Description',
     onChange: mockOnChange,
   };
-  it('render correctly with default props', () => {
+  it('should match snapshot', () => {
     const { container } = render(<TextareaField {...props} />);
+
     expect(container).toMatchSnapshot();
   });
 
@@ -25,5 +26,13 @@ describe('TextareaField component', () => {
     });
 
     expect(mockOnChange).toHaveBeenCalled();
+  });
+
+  it('should display error message when isError is true', () => {
+    const { getByText } = render(
+      <TextareaField {...props} isError errorMessages="Required field" />,
+    );
+
+    expect(getByText('Required field')).toBeInTheDocument();
   });
 });

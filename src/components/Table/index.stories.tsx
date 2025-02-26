@@ -9,18 +9,15 @@ import { IoBagSharp } from 'react-icons/io5';
 import { PiCheckSquareFill } from 'react-icons/pi';
 import { RiDeleteBin7Fill } from 'react-icons/ri';
 
-// Components
-import { Status } from '@/components';
-import Table from '.';
-
-// Enums
-import { Status as StatusEnum } from '@/enums';
-
 // Types
-import { TDataSource } from '@/types';
+import { TDataSource, Status as StatusEnum } from '@/types';
 
 // Themes
 import { fonts } from '@/themes/bases/typography';
+
+// Components
+import { Status } from '@/components';
+import Table from '.';
 
 const queryClient = new QueryClient();
 

@@ -12,6 +12,7 @@ import {
   Flex,
   FormControl,
   FormErrorMessage,
+  IconButton,
   Input,
   Text,
 } from '@chakra-ui/react';
@@ -23,10 +24,14 @@ import {
   VALIDATION_RULES,
 } from '@/constants';
 
-// Icons
-import { ImageIcon } from '@/icons';
+// Types
+import { ToastStatus } from '@/types';
+
+// Hooks
 import { useCustomToast, useUploadImage } from '@/hooks';
-import { ToastStatus } from '@/enums';
+
+// Components
+import { ImageIcon } from '@/components';
 import Fallback from '../Fallback';
 
 export interface TUploadImageProps {
@@ -136,7 +141,7 @@ const UploadImage = ({ imageUrl = '', onFileChange }: TUploadImageProps) => {
   }, [handleRemoveImage, isPending, selectedImageUrl]);
 
   return (
-    <Flex direction="column" align="start" gap={4} onClick={handleOpenFile}>
+    <Flex direction="column" align="start" gap={4}>
       {renderImage}
       {!selectedImageUrl && (
         <Controller
@@ -151,11 +156,21 @@ const UploadImage = ({ imageUrl = '', onFileChange }: TUploadImageProps) => {
                 flexDirection="column"
                 alignItems="center"
                 justifyContent="center"
-                cursor="pointer"
               >
-                <ImageIcon />
+                <IconButton
+                  aria-label="Upload image"
+                  variant="icon"
+                  icon={<ImageIcon />}
+                  cursor="pointer"
+                  onClick={handleOpenFile}
+                />
                 <Text fontSize="xs" mt={2} color="pastelBlue">
-                  <Text as="span" color="primary" cursor="pointer">
+                  <Text
+                    as="span"
+                    color="primary"
+                    cursor="pointer"
+                    onClick={handleOpenFile}
+                  >
                     Click to upload
                   </Text>{' '}
                   or drag and drop

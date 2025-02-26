@@ -1,10 +1,10 @@
 import { Flex, Text } from '@chakra-ui/react';
 
 // Icons
-import { EllipseIcon } from '@/icons';
+import { EllipseIcon } from '@/components';
 
-// Enums
-import { Status as StatusEnum } from '@/enums';
+// Types
+import { Status as StatusEnum } from '@/types';
 
 export interface StatusProps {
   type?: StatusEnum;

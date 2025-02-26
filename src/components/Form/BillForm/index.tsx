@@ -10,8 +10,8 @@ import { BILL_FORM_FIELD, PAYMENT_METHODS } from '@/constants';
 // Types
 import { IUserBillInfo } from '@/types';
 
-// Schemas
-import { billFormSchema } from '@/schemas';
+// Utils
+import { billFormSchema, isFormDirty } from '@/utils';
 
 // Stores
 import { useUserFormActions } from '@/stores';
@@ -24,7 +24,7 @@ export interface IBillForm {
 }
 
 const BillForm = ({ initialValues }: IBillForm) => {
-  const { setUserData, setFormValidity } = useUserFormActions();
+  const { setUserData, setFormValidity, setIsDirty } = useUserFormActions();
   const {
     payment = PAYMENT_METHODS[0]?.value,
     billName = '',
@@ -50,22 +50,19 @@ const BillForm = ({ initialValues }: IBillForm) => {
 
   useEffect(() => {
     if (initialValues) {
-      // Sanitize `initialValues` by ensuring that all fields have a default value.
-      // If any field is `null` or `undefined`, it will be replaced with an empty string ('').
-      const sanitizedValues = Object.fromEntries(
-        Object.entries(initialValues).map(([key, value]) => [key, value ?? '']),
-      ) as IUserBillInfo;
-
-      // Reset the form with the sanitized initial values.
-      reset(sanitizedValues);
+      reset(initialValues);
     }
 
     const subscription = watch((data) => {
       setUserData(data); // Initialize with current form data
+
+      if (initialValues) {
+        setIsDirty(isFormDirty(data, initialValues));
+      } else setIsDirty(true);
     });
 
     return () => subscription.unsubscribe(); // Cleanup on unmount
-  }, [initialValues, reset, watch, setUserData]);
+  }, [initialValues, reset, setIsDirty, setUserData, watch]);
 
   useEffect(() => {
     setFormValidity('bill', formState.isValid);

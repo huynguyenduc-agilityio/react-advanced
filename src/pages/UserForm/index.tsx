@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useMemo } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo } from 'react';
 import { Box, Text, VStack } from '@chakra-ui/react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 // Icons
-import { FaCreditCard, FaUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { HiMiniPencil } from 'react-icons/hi2';
 import { RiNotification2Fill } from 'react-icons/ri';
 
@@ -20,13 +20,14 @@ import { useUserForm, useUserFormActions } from '@/stores';
 import { fonts } from '@/themes/bases/typography';
 
 // Components
-import { Tabs } from '@/components';
-import {
-  BillForm,
-  NotificationForm,
-  PersonalForm,
-  TeamForm,
-} from '@/components/Form';
+import { CardIcon, Fallback, Tabs } from '@/components';
+
+const PersonalForm = lazy(() => import('@/components/Form/PersonalForm'));
+const TeamForm = lazy(() => import('@/components/Form/TeamForm'));
+const BillForm = lazy(() => import('@/components/Form/BillForm'));
+const NotificationForm = lazy(
+  () => import('@/components/Form/NotificationForm'),
+);
 
 const UserForm = () => {
   const navigate = useNavigate();
@@ -52,31 +53,45 @@ const UserForm = () => {
     navigate(PUBLIC_ROUTERS.ROOT);
   }, [user, actionForm, resetUserForm, navigate]);
 
-  const TABS_LIST = useMemo(
+  const TAB_LIST = useMemo(
     () => [
       {
         label: 'Personal Information',
         icon: HiMiniPencil,
-        content: <PersonalForm initialValues={userDetail} />,
+        content: (
+          <Suspense fallback={<Fallback />}>
+            <PersonalForm initialValues={userDetail} />
+          </Suspense>
+        ),
       },
       {
         label: 'Team',
         icon: FaUser,
-        content: <TeamForm initialValues={userDetail} />,
+        content: (
+          <Suspense fallback={<Fallback />}>
+            <TeamForm initialValues={userDetail} />
+          </Suspense>
+        ),
       },
       {
         label: 'Billing',
-        icon: FaCreditCard,
-        content: <BillForm initialValues={userDetail} />,
+        icon: CardIcon,
+        content: (
+          <Suspense fallback={<Fallback />}>
+            <BillForm initialValues={userDetail} />
+          </Suspense>
+        ),
       },
       {
         label: 'Notifications',
         icon: RiNotification2Fill,
         content: (
-          <NotificationForm
-            initialValues={userDetail}
-            onSubmit={handleSubmit}
-          />
+          <Suspense fallback={<Fallback />}>
+            <NotificationForm
+              initialValues={userDetail}
+              onSubmit={handleSubmit}
+            />
+          </Suspense>
         ),
       },
     ],
@@ -94,7 +109,7 @@ const UserForm = () => {
         {id ? 'Update' : 'Add'} User
       </Text>
       <Box width="full" mt="100px">
-        <Tabs tabs={TABS_LIST} />
+        <Tabs tabs={TAB_LIST} />
       </Box>
     </VStack>
   );

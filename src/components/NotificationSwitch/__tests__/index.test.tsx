@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 
-// Enums
-import { NotificationType } from '@/enums';
+// Types
+import { NotificationType } from '@/types';
 
 // Components
 import NotificationSwitch from '@/components/NotificationSwitch';
@@ -45,5 +45,16 @@ describe('NotificationSwitch', () => {
     fireEvent.click(emailOption);
 
     expect(emailOption).toHaveStyle('color: pastelBlue');
+  });
+
+  it('should match snapshot', () => {
+    const { container } = render(
+      <NotificationSwitch
+        value={NotificationType.InApp}
+        onChange={handleChange}
+      />,
+    );
+
+    expect(container).toMatchSnapshot();
   });
 });

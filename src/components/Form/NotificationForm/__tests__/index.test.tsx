@@ -4,10 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { FormProvider, useForm } from 'react-hook-form';
 
 // Types
-import { IUserModel } from '@/types';
-
-// Enums
-import { NotificationType } from '@/enums';
+import { IUserModel, NotificationType } from '@/types';
 
 // Components
 import NotificationForm from '..';
@@ -73,5 +70,15 @@ describe('NotificationForm', () => {
 
     fireEvent.click(mentionSwitch);
     expect(mentionSwitch).toBeChecked();
+  });
+
+  it('should match snapshot', () => {
+    const { asFragment } = render(
+      <Wrapper>
+        <NotificationForm />
+      </Wrapper>,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

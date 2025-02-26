@@ -17,8 +17,8 @@ import { TEAM_FORM_FIELD } from '@/constants';
 // Types
 import { IUserTeamInfo } from '@/types';
 
-// Schemas
-import { teamFormSchema } from '@/schemas';
+// Utils
+import { isFormDirty, teamFormSchema } from '@/utils';
 
 // Stores
 import { useUserFormActions } from '@/stores';
@@ -31,7 +31,7 @@ export interface ITeamFormProps {
 }
 
 const TeamForm = ({ initialValues }: ITeamFormProps) => {
-  const { setUserData, setFormValidity } = useUserFormActions();
+  const { setUserData, setFormValidity, setIsDirty } = useUserFormActions();
   const {
     teamName = '',
     rank = '',
@@ -54,22 +54,19 @@ const TeamForm = ({ initialValues }: ITeamFormProps) => {
 
   useEffect(() => {
     if (initialValues) {
-      // Sanitize `initialValues` by ensuring that all fields have a default value.
-      // If any field is `null` or `undefined`, it will be replaced with an empty string ('').
-      const sanitizedValues = Object.fromEntries(
-        Object.entries(initialValues).map(([key, value]) => [key, value ?? '']),
-      ) as IUserTeamInfo;
-
-      // Reset the form with the sanitized initial values.
-      reset(sanitizedValues);
+      reset(initialValues);
     }
 
     const subscription = watch((data) => {
       setUserData(data); // Initialize with current form data
+
+      if (initialValues) {
+        setIsDirty(isFormDirty(data, initialValues));
+      } else setIsDirty(true);
     });
 
     return () => subscription.unsubscribe(); // Cleanup on unmount
-  }, [initialValues, reset, watch, setUserData]);
+  }, [initialValues, reset, setIsDirty, setUserData, watch]);
 
   useEffect(() => {
     setFormValidity('team', formState.isValid);

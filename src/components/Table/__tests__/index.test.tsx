@@ -1,10 +1,8 @@
+import { ReactNode } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Avatar, Box, Flex, IconButton, Text } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-
-// Components
-import Status from '@/components/Status';
-import Table from '..';
 
 // Icons
 import { FaPhoneAlt, FaUser } from 'react-icons/fa';
@@ -17,14 +15,29 @@ import { RiDeleteBin7Fill } from 'react-icons/ri';
 import { fonts } from '@/themes/bases/typography';
 
 // Types
-import { TDataSource } from '@/types';
+import { TDataSource, Status as StatusEnum } from '@/types';
 
-// Enums
-import { Status as StatusEnum } from '@/enums';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactNode } from 'react';
+// Components
+import Status from '@/components/Status';
+import Table from '..';
 
 const mockOnClick = jest.fn();
+const mockDelete = jest.fn();
+
+jest.mock('@/hooks', () => ({
+  ...jest.requireActual('@/hooks'),
+  useDeleteMultipleUsers: jest.fn(() => ({
+    handleDeleteMultipleUsers: mockDelete,
+    isDeleteMultipleLoading: false,
+  })),
+}));
+
+jest.mock('@/contexts', () => ({
+  ...jest.requireActual('@/contexts'),
+  useConfirmationDialog: jest.fn(() => ({
+    confirm: jest.fn(({ onConfirm }) => onConfirm()),
+  })),
+}));
 
 describe('Table Component', () => {
   const queryClient = new QueryClient();
@@ -32,6 +45,25 @@ describe('Table Component', () => {
   const Wrapper = ({ children }: { children: ReactNode }) => (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   );
+
+  const dataSource: TDataSource[] = [
+    {
+      id: '1',
+      name: 'John Doe',
+      phone: '123-456-7890',
+      location: 'New York, NY',
+      company: 'ABC Company',
+      status: StatusEnum.Online,
+    },
+    {
+      id: '2',
+      name: 'Jane Doe',
+      phone: '987-654-3210',
+      location: 'Los Angeles, CA',
+      company: 'XYZ Company',
+      status: StatusEnum.Offline,
+    },
+  ];
 
   const renderSetup = () =>
     render(
@@ -114,24 +146,25 @@ describe('Table Component', () => {
               ),
             },
           ]}
-          dataSource={[
-            {
-              id: '1',
-              name: 'John Doe',
-              email: 'john@example.com',
-              phone: '123-456-7890',
-              location: 'New York, NY',
-              company: 'ABC Company',
-              status: 'online',
-            },
-          ]}
+          dataSource={dataSource}
         />
       </Wrapper>,
     );
 
-  it('should render correctly', () => {
+  it('should match snapshot', () => {
     const { container } = renderSetup();
+
     expect(container).toMatchSnapshot();
+  });
+
+  it('should render an empty state when no data is provided ', () => {
+    const { getByText } = render(
+      <Wrapper>
+        <Table />
+      </Wrapper>,
+    );
+
+    expect(getByText('No data found')).toBeInTheDocument();
   });
 
   it('should render no data correctly', () => {
@@ -140,12 +173,60 @@ describe('Table Component', () => {
         <Table columns={[]} dataSource={[]} />
       </Wrapper>,
     );
+
     expect(getByText('No data found')).toBeInTheDocument();
   });
 
   it('onClick edit button should be called', async () => {
-    const { getByTestId } = renderSetup();
-    await userEvent.click(getByTestId('edit-button'));
+    const { getAllByTestId } = renderSetup();
+    const editButtons = getAllByTestId('edit-button');
+
+    await userEvent.click(editButtons[0]);
     expect(mockOnClick).toHaveBeenCalled();
+  });
+
+  it('should allow selecting a row', async () => {
+    const { getAllByRole } = renderSetup();
+    const checkboxes = getAllByRole('checkbox');
+
+    await userEvent.click(checkboxes[1]);
+
+    expect(checkboxes[1]).toBeChecked();
+  });
+
+  it('should allow selecting all rows', async () => {
+    const { getAllByRole } = renderSetup();
+    const checkboxes = getAllByRole('checkbox');
+
+    await userEvent.click(checkboxes[0]);
+
+    checkboxes.forEach((checkbox) => {
+      expect(checkbox).toBeChecked();
+    });
+  });
+
+  it('should call delete action on confirm', async () => {
+    const { getByText, getAllByRole } = renderSetup();
+
+    const checkboxes = getAllByRole('checkbox');
+
+    await userEvent.click(checkboxes[1]);
+    await userEvent.click(getByText('Mark Delete'));
+
+    expect(mockDelete).toHaveBeenCalled();
+  });
+
+  it('should call delete action on confirm', async () => {
+    const { getAllByTestId, getByText } = renderSetup();
+
+    const checkboxes = getAllByTestId('row-checkbox');
+    await userEvent.click(checkboxes[0]);
+
+    const deleteButton = getByText('Mark Delete');
+    expect(deleteButton).toBeInTheDocument();
+
+    await userEvent.click(deleteButton);
+
+    expect(mockDelete).toHaveBeenCalled();
   });
 });

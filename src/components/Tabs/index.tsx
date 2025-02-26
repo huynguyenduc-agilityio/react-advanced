@@ -47,8 +47,10 @@ const Tabs = ({ tabs }: ITabsProps) => {
             _selected={{ color: 'white', bg: 'darkBlue' }}
             _hover={{ bg: 'darkBlue' }}
           >
-            <Icon as={icon} boxSize={3} mr={1} />
-            <Text fontSize="md">{label}</Text>
+            <Icon as={icon} boxSize={3} />
+            <Text fontSize="md" ml={1}>
+              {label}
+            </Text>
           </Tab>
         ))}
       </TabList>

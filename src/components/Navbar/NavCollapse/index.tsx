@@ -49,6 +49,7 @@ const NavCollapse = () => {
                       <Icon
                         as={isExpanded ? HiChevronDown : HiChevronRight}
                         fontSize="12"
+                        data-testid="chevron-icon"
                       />
                     </Flex>
                   </AccordionButton>

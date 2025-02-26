@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextareaField component render correctly with default props 1`] = `
+exports[`TextareaField component should match snapshot 1`] = `
 <div>
   <div
     class="chakra-form-control css-zol2i8"

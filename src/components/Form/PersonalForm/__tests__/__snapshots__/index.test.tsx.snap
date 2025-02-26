@@ -1,0 +1,1386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonalForm Component should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body
+    class="chakra-ui-light"
+  >
+    <div>
+      <div
+        class="chakra-stack css-1te3g49"
+      >
+        <div
+          class="chakra-stack css-1msb1n6"
+        >
+          <div
+            class="css-0"
+          >
+            <label
+              class="chakra-form__label css-s9gtqk"
+            >
+              Personal Information
+            </label>
+            <div
+              class="css-hzjs2w"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing.
+            </div>
+          </div>
+          <form
+            class="chakra-stack css-suj7nf"
+          >
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rk:"
+                      id="field-:rk:-label"
+                    >
+                      Full name
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Full name"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rk:"
+                      name="name"
+                      placeholder="Please enter name"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 20 20"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      />
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rl:"
+                      id="field-:rl:-label"
+                    >
+                      Email address
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Email address"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rl:"
+                      name="email"
+                      placeholder="Please enter email"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1wbjg3v"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      fill="none"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      width="13"
+                    >
+                      <path
+                        d="M11.5039 0.367188H1.50391C1.23869 0.367188 0.984336 0.472544 0.796799 0.660081C0.609263 0.847617 0.503906 1.10197 0.503906 1.36719V9.36719V11.3672C0.503906 11.6324 0.609263 11.8868 0.796799 12.0743C0.984336 12.2618 1.23869 12.3672 1.50391 12.3672H11.5039C11.7691 12.3672 12.0235 12.2618 12.211 12.0743C12.3985 11.8868 12.5039 11.6324 12.5039 11.3672V1.36719C12.5039 1.10197 12.3985 0.847617 12.211 0.660081C12.0235 0.472544 11.7691 0.367188 11.5039 0.367188ZM9.71016 5.36719C9.52189 5.18169 9.2682 5.0777 9.00391 5.0777C8.73961 5.0777 8.48592 5.18169 8.29766 5.36719L5.50391 8.16094L4.21016 6.86719C4.02189 6.68169 3.76821 6.5777 3.50391 6.5777C3.23961 6.5777 2.98592 6.68169 2.79766 6.86719L1.50391 8.16094V1.36719H11.5039V7.16094L9.71016 5.36719Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-txj535"
+                      for="field-:rm:"
+                      id="field-:rm:-label"
+                    >
+                      Photo
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <div
+                      class="css-9opec7"
+                    >
+                      <div
+                        class="chakra-form-control css-1kxonj9"
+                        role="group"
+                      >
+                        <div
+                          class="css-1t15oa9"
+                        >
+                          <button
+                            aria-label="Upload image"
+                            class="chakra-button css-cioh65"
+                            type="button"
+                          >
+                            <svg
+                              fill="none"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              width="33"
+                            >
+                              <circle
+                                cx="16.75"
+                                cy="16.5"
+                                fill="#CB3CFF"
+                                opacity="0.2"
+                                r="16"
+                              />
+                              <path
+                                d="M23.4167 8.5H10.0833C9.72971 8.5 9.39057 8.64048 9.14052 8.89052C8.89048 9.14057 8.75 9.47971 8.75 9.83333V20.5V23.1667C8.75 23.5203 8.89048 23.8594 9.14052 24.1095C9.39057 24.3595 9.72971 24.5 10.0833 24.5H23.4167C23.7703 24.5 24.1094 24.3595 24.3595 24.1095C24.6095 23.8594 24.75 23.5203 24.75 23.1667V9.83333C24.75 9.47971 24.6095 9.14057 24.3595 8.89052C24.1094 8.64048 23.7703 8.5 23.4167 8.5ZM21.025 15.1667C20.774 14.9193 20.4357 14.7807 20.0833 14.7807C19.7309 14.7807 19.3927 14.9193 19.1417 15.1667L15.4167 18.8917L13.6917 17.1667C13.4406 16.9193 13.1024 16.7807 12.75 16.7807C12.3976 16.7807 12.0594 16.9193 11.8083 17.1667L10.0833 18.8917V9.83333H23.4167V17.5583L21.025 15.1667Z"
+                                fill="#CB3CFF"
+                              />
+                            </svg>
+                          </button>
+                          <p
+                            class="chakra-text css-11fxtvu"
+                          >
+                            <span
+                              class="chakra-text css-ynzqlz"
+                            >
+                              Click to upload
+                            </span>
+                             
+                            or drag and drop
+                          </p>
+                          <p
+                            class="chakra-text css-241g5e"
+                          >
+                            SVG, PNG, JPG or GIF (max. 800 x 400px)
+                          </p>
+                          <input
+                            accept="image/*"
+                            class="chakra-input css-1cjy4zv"
+                            data-testid="file-input"
+                            hidden=""
+                            id="imageInput"
+                            type="file"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-1n95upm"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.419a4 4 0 0 0-.885 1.343Z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-e2qg4n"
+                    for="field-:ro:"
+                    id="field-:ro:-label"
+                  >
+                    Description
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <textarea
+                    aria-label="description"
+                    class="chakra-textarea css-1y43o19"
+                    id="field-:ro:"
+                    name="description"
+                    placeholder="Write a short bio about you..."
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="chakra-stack css-1msb1n6"
+        >
+          <div
+            class="css-0"
+          >
+            <label
+              class="chakra-form__label css-s9gtqk"
+            >
+              Basic Information
+            </label>
+            <div
+              class="css-hzjs2w"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing.
+            </div>
+          </div>
+          <form
+            class="chakra-stack css-suj7nf"
+          >
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rp:"
+                      id="field-:rp:-label"
+                    >
+                      Phone
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Phone"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rp:"
+                      name="phone"
+                      placeholder="(123) 456-7890"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M372 160v-12A116.13 116.13 0 0 0 258.89 32h-5.78A116.13 116.13 0 0 0 140 148v12H52a4 4 0 0 0-4 4v300a16 16 0 0 0 16 16h384a16 16 0 0 0 16-16V164a4 4 0 0 0-4-4zm-40 0H180v-11c0-41.84 33.41-76.56 75.25-77A76.08 76.08 0 0 1 332 148z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rq:"
+                      id="field-:rq:-label"
+                    >
+                      Position
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Position"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rq:"
+                      name="position"
+                      placeholder="Please enter position"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rr:"
+                      id="field-:rr:-label"
+                    >
+                      Location
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Location"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rr:"
+                      name="location"
+                      placeholder="Please enter location"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      fill="none"
+                      height="14"
+                      viewBox="0 0 15 14"
+                      width="15"
+                    >
+                      <path
+                        d="M7.50391 13.3672C10.8176 13.3672 13.5039 10.6809 13.5039 7.36719C13.5039 4.05348 10.8176 1.36719 7.50391 1.36719C4.1902 1.36719 1.50391 4.05348 1.50391 7.36719C1.50391 10.6809 4.1902 13.3672 7.50391 13.3672Z"
+                        stroke="white"
+                        stroke-miterlimit="10"
+                        stroke-width="1.2"
+                      />
+                      <path
+                        d="M1.50391 7.36719H13.5039"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.2"
+                      />
+                      <path
+                        d="M7.50281 13.2046C8.88352 13.2046 10.0028 10.591 10.0028 7.36707C10.0028 4.14311 8.88352 1.52957 7.50281 1.52957C6.1221 1.52957 5.00281 4.14311 5.00281 7.36707C5.00281 10.591 6.1221 13.2046 7.50281 13.2046Z"
+                        stroke="white"
+                        stroke-miterlimit="10"
+                        stroke-width="1.2"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rs:"
+                      id="field-:rs:-label"
+                    >
+                      Website
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Website"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rs:"
+                      name="website"
+                      placeholder="Please enter website"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-198wdtr"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M372 160v-12A116.13 116.13 0 0 0 258.89 32h-5.78A116.13 116.13 0 0 0 140 148v12H52a4 4 0 0 0-4 4v300a16 16 0 0 0 16 16h384a16 16 0 0 0 16-16V164a4 4 0 0 0-4-4zm-40 0H180v-11c0-41.84 33.41-76.56 75.25-77A76.08 76.08 0 0 1 332 148z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rt:"
+                      id="field-:rt:-label"
+                    >
+                      Company
+                      <span
+                        aria-hidden="true"
+                        class="chakra-form__required-indicator css-1tfjd1n"
+                        role="presentation"
+                      >
+                        *
+                      </span>
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <input
+                      aria-label="Company"
+                      aria-required="true"
+                      class="chakra-input css-1g101r8"
+                      id="field-:rt:"
+                      name="company"
+                      placeholder="Please enter company"
+                      required=""
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <span
+        hidden=""
+        id="__chakra_env"
+      />
+    </div>
+    <div
+      class="chakra-portal"
+    >
+      <div
+        aria-label="Notifications-top"
+        aria-live="polite"
+        id="chakra-toast-manager-top"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-top-left"
+        aria-live="polite"
+        id="chakra-toast-manager-top-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-top-right"
+        aria-live="polite"
+        id="chakra-toast-manager-top-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom-left"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-left"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+      <div
+        aria-label="Notifications-bottom"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"
+      />
+      <div
+        aria-label="Notifications-bottom-right"
+        aria-live="polite"
+        id="chakra-toast-manager-bottom-right"
+        role="region"
+        style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="chakra-stack css-1te3g49"
+    >
+      <div
+        class="chakra-stack css-1msb1n6"
+      >
+        <div
+          class="css-0"
+        >
+          <label
+            class="chakra-form__label css-s9gtqk"
+          >
+            Personal Information
+          </label>
+          <div
+            class="css-hzjs2w"
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+          </div>
+        </div>
+        <form
+          class="chakra-stack css-suj7nf"
+        >
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rk:"
+                    id="field-:rk:-label"
+                  >
+                    Full name
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Full name"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rk:"
+                    name="name"
+                    placeholder="Please enter name"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rl:"
+                    id="field-:rl:-label"
+                  >
+                    Email address
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Email address"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rl:"
+                    name="email"
+                    placeholder="Please enter email"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1wbjg3v"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    fill="none"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    width="13"
+                  >
+                    <path
+                      d="M11.5039 0.367188H1.50391C1.23869 0.367188 0.984336 0.472544 0.796799 0.660081C0.609263 0.847617 0.503906 1.10197 0.503906 1.36719V9.36719V11.3672C0.503906 11.6324 0.609263 11.8868 0.796799 12.0743C0.984336 12.2618 1.23869 12.3672 1.50391 12.3672H11.5039C11.7691 12.3672 12.0235 12.2618 12.211 12.0743C12.3985 11.8868 12.5039 11.6324 12.5039 11.3672V1.36719C12.5039 1.10197 12.3985 0.847617 12.211 0.660081C12.0235 0.472544 11.7691 0.367188 11.5039 0.367188ZM9.71016 5.36719C9.52189 5.18169 9.2682 5.0777 9.00391 5.0777C8.73961 5.0777 8.48592 5.18169 8.29766 5.36719L5.50391 8.16094L4.21016 6.86719C4.02189 6.68169 3.76821 6.5777 3.50391 6.5777C3.23961 6.5777 2.98592 6.68169 2.79766 6.86719L1.50391 8.16094V1.36719H11.5039V7.16094L9.71016 5.36719Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-txj535"
+                    for="field-:rm:"
+                    id="field-:rm:-label"
+                  >
+                    Photo
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <div
+                    class="css-9opec7"
+                  >
+                    <div
+                      class="chakra-form-control css-1kxonj9"
+                      role="group"
+                    >
+                      <div
+                        class="css-1t15oa9"
+                      >
+                        <button
+                          aria-label="Upload image"
+                          class="chakra-button css-cioh65"
+                          type="button"
+                        >
+                          <svg
+                            fill="none"
+                            height="33"
+                            viewBox="0 0 33 33"
+                            width="33"
+                          >
+                            <circle
+                              cx="16.75"
+                              cy="16.5"
+                              fill="#CB3CFF"
+                              opacity="0.2"
+                              r="16"
+                            />
+                            <path
+                              d="M23.4167 8.5H10.0833C9.72971 8.5 9.39057 8.64048 9.14052 8.89052C8.89048 9.14057 8.75 9.47971 8.75 9.83333V20.5V23.1667C8.75 23.5203 8.89048 23.8594 9.14052 24.1095C9.39057 24.3595 9.72971 24.5 10.0833 24.5H23.4167C23.7703 24.5 24.1094 24.3595 24.3595 24.1095C24.6095 23.8594 24.75 23.5203 24.75 23.1667V9.83333C24.75 9.47971 24.6095 9.14057 24.3595 8.89052C24.1094 8.64048 23.7703 8.5 23.4167 8.5ZM21.025 15.1667C20.774 14.9193 20.4357 14.7807 20.0833 14.7807C19.7309 14.7807 19.3927 14.9193 19.1417 15.1667L15.4167 18.8917L13.6917 17.1667C13.4406 16.9193 13.1024 16.7807 12.75 16.7807C12.3976 16.7807 12.0594 16.9193 11.8083 17.1667L10.0833 18.8917V9.83333H23.4167V17.5583L21.025 15.1667Z"
+                              fill="#CB3CFF"
+                            />
+                          </svg>
+                        </button>
+                        <p
+                          class="chakra-text css-11fxtvu"
+                        >
+                          <span
+                            class="chakra-text css-ynzqlz"
+                          >
+                            Click to upload
+                          </span>
+                           
+                          or drag and drop
+                        </p>
+                        <p
+                          class="chakra-text css-241g5e"
+                        >
+                          SVG, PNG, JPG or GIF (max. 800 x 400px)
+                        </p>
+                        <input
+                          accept="image/*"
+                          class="chakra-input css-1cjy4zv"
+                          data-testid="file-input"
+                          hidden=""
+                          id="imageInput"
+                          type="file"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="chakra-form-control css-1olyxy2"
+            role="group"
+          >
+            <div
+              class="css-h38yef"
+            >
+              <div
+                class="css-qdbjwx"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="chakra-icon css-1n95upm"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 20 20"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.419a4 4 0 0 0-.885 1.343Z"
+                  />
+                </svg>
+                <label
+                  class="chakra-form__label css-e2qg4n"
+                  for="field-:ro:"
+                  id="field-:ro:-label"
+                >
+                  Description
+                </label>
+              </div>
+              <div
+                class="css-1rr4qq7"
+              >
+                <textarea
+                  aria-label="description"
+                  class="chakra-textarea css-1y43o19"
+                  id="field-:ro:"
+                  name="description"
+                  placeholder="Write a short bio about you..."
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="chakra-stack css-1msb1n6"
+      >
+        <div
+          class="css-0"
+        >
+          <label
+            class="chakra-form__label css-s9gtqk"
+          >
+            Basic Information
+          </label>
+          <div
+            class="css-hzjs2w"
+          >
+            Lorem ipsum dolor sit amet consectetur adipiscing.
+          </div>
+        </div>
+        <form
+          class="chakra-stack css-suj7nf"
+        >
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rp:"
+                    id="field-:rp:-label"
+                  >
+                    Phone
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Phone"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rp:"
+                    name="phone"
+                    placeholder="(123) 456-7890"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M372 160v-12A116.13 116.13 0 0 0 258.89 32h-5.78A116.13 116.13 0 0 0 140 148v12H52a4 4 0 0 0-4 4v300a16 16 0 0 0 16 16h384a16 16 0 0 0 16-16V164a4 4 0 0 0-4-4zm-40 0H180v-11c0-41.84 33.41-76.56 75.25-77A76.08 76.08 0 0 1 332 148z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rq:"
+                    id="field-:rq:-label"
+                  >
+                    Position
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Position"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rq:"
+                    name="position"
+                    placeholder="Please enter position"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rr:"
+                    id="field-:rr:-label"
+                  >
+                    Location
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Location"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rr:"
+                    name="location"
+                    placeholder="Please enter location"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    fill="none"
+                    height="14"
+                    viewBox="0 0 15 14"
+                    width="15"
+                  >
+                    <path
+                      d="M7.50391 13.3672C10.8176 13.3672 13.5039 10.6809 13.5039 7.36719C13.5039 4.05348 10.8176 1.36719 7.50391 1.36719C4.1902 1.36719 1.50391 4.05348 1.50391 7.36719C1.50391 10.6809 4.1902 13.3672 7.50391 13.3672Z"
+                      stroke="white"
+                      stroke-miterlimit="10"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M1.50391 7.36719H13.5039"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.2"
+                    />
+                    <path
+                      d="M7.50281 13.2046C8.88352 13.2046 10.0028 10.591 10.0028 7.36707C10.0028 4.14311 8.88352 1.52957 7.50281 1.52957C6.1221 1.52957 5.00281 4.14311 5.00281 7.36707C5.00281 10.591 6.1221 13.2046 7.50281 13.2046Z"
+                      stroke="white"
+                      stroke-miterlimit="10"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rs:"
+                    id="field-:rs:-label"
+                  >
+                    Website
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Website"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rs:"
+                    name="website"
+                    placeholder="Please enter website"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-198wdtr"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M372 160v-12A116.13 116.13 0 0 0 258.89 32h-5.78A116.13 116.13 0 0 0 140 148v12H52a4 4 0 0 0-4 4v300a16 16 0 0 0 16 16h384a16 16 0 0 0 16-16V164a4 4 0 0 0-4-4zm-40 0H180v-11c0-41.84 33.41-76.56 75.25-77A76.08 76.08 0 0 1 332 148z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rt:"
+                    id="field-:rt:-label"
+                  >
+                    Company
+                    <span
+                      aria-hidden="true"
+                      class="chakra-form__required-indicator css-1tfjd1n"
+                      role="presentation"
+                    >
+                      *
+                    </span>
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <input
+                    aria-label="Company"
+                    aria-required="true"
+                    class="chakra-input css-1g101r8"
+                    id="field-:rt:"
+                    name="company"
+                    placeholder="Please enter company"
+                    required=""
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <span
+      hidden=""
+      id="__chakra_env"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

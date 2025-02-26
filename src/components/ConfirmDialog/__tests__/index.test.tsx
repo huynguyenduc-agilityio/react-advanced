@@ -1,6 +1,8 @@
-import { useConfirmationDialog } from '@/contexts';
 import { ChakraProvider } from '@chakra-ui/react';
 import { fireEvent, render, screen } from '@testing-library/react';
+
+import { useConfirmationDialog } from '@/contexts';
+
 import ConfirmDialog from '..';
 
 // Mock the `useConfirmationDialog` context
@@ -60,5 +62,15 @@ describe('ConfirmDialog', () => {
 
     fireEvent.click(screen.getByText('Cancel'));
     expect(mockOnCancel).toHaveBeenCalled();
+  });
+
+  it('should match snapshot', () => {
+    const { asFragment } = render(
+      <ChakraProvider>
+        <ConfirmDialog />
+      </ChakraProvider>,
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

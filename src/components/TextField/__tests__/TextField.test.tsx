@@ -70,13 +70,15 @@ describe('TextField Component', () => {
     expect(screen.queryByText(/invalid input/i)).not.toBeInTheDocument();
   });
 
-  it('matches the snapshot without icon and error', () => {
+  it('should match the snapshot without icon and error', () => {
     const { asFragment } = render(<TextField {...commonProps} />);
+
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('matches the snapshot with an icon', () => {
+  it('should match the snapshot with an icon', () => {
     const { asFragment } = render(<TextField {...commonProps} icon={FaUser} />);
+
     expect(asFragment()).toMatchSnapshot();
   });
 });

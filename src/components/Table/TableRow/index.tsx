@@ -12,7 +12,7 @@ interface TableRowProps {
   onSelect: (rowId: string) => void;
 }
 
-const TableRow = ({ id, cells = [], isSelected, onSelect }: TableRowProps) => {
+const TableRow = ({ id, cells, isSelected, onSelect }: TableRowProps) => {
   const handleSelectRecord = () => {
     onSelect(id);
   };
@@ -22,6 +22,7 @@ const TableRow = ({ id, cells = [], isSelected, onSelect }: TableRowProps) => {
       <Td py={4} pl={9} pr={0} textAlign="center">
         <Flex>
           <Checkbox
+            data-testid="row-checkbox"
             aria-label={`Checkbox ${id}`}
             isChecked={isSelected}
             onChange={handleSelectRecord}

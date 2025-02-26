@@ -1,4 +1,8 @@
-import { AmericanExpressIcon, MasterCardIcon, VisaIcon } from '@/icons';
+import {
+  AmericanExpressIcon,
+  MasterCardIcon,
+  VisaIcon,
+} from '@/components/Icons';
 
 export const PAYMENT_METHODS = [
   {

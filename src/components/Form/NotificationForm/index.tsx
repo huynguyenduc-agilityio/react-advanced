@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import {
   Box,
   Button,
+  CircularProgress,
   Flex,
   FormControl,
   FormLabel,
@@ -16,29 +17,34 @@ import { Controller, useForm } from 'react-hook-form';
 import { MdInfo } from 'react-icons/md';
 
 // Types
-import { IUserNotifications } from '@/types';
+import { IUserNotifications, NotificationType } from '@/types';
 
 // Constants
 import { GENERAL_FORM_FIELD, SUMMARY_FORM_FIELD } from '@/constants';
 
-// Enums
-import { NotificationType } from '@/enums';
-
 // Stores
 import { useUserForm, useUserFormActions } from '@/stores';
+
+// Utils
+import { isFormDirty } from '@/utils';
 
 // Components
 import NotificationSwitch from '@/components/NotificationSwitch';
 
 export interface INotificationForm {
   initialValues?: IUserNotifications;
+  isLoading?: boolean;
   onSubmit?: () => void;
 }
 
-const NotificationForm = ({ initialValues, onSubmit }: INotificationForm) => {
-  const { id = '' } = useParams();
-  const { userValidity } = useUserForm();
-  const { setUserData } = useUserFormActions();
+const NotificationForm = ({
+  initialValues,
+  isLoading,
+  onSubmit,
+}: INotificationForm) => {
+  const { id } = useParams();
+  const { userValidity, isDirty } = useUserForm();
+  const { setUserData, setIsDirty } = useUserFormActions();
 
   const {
     mentionMessage = NotificationType.InApp,
@@ -71,13 +77,20 @@ const NotificationForm = ({ initialValues, onSubmit }: INotificationForm) => {
   useEffect(() => {
     if (initialValues) {
       reset(initialValues);
+    } else {
+      setUserData(defaultValue);
     }
 
-    const unsubscribe = watch((data) => setUserData(data)).unsubscribe;
-    setUserData(watch()); // Initialize with current form data
+    const subscription = watch((data) => {
+      setUserData(data); // Initialize with current form data
 
-    return () => unsubscribe(); // Cleanup on unmount
-  }, [initialValues, reset, watch, setUserData]);
+      if (initialValues) {
+        setIsDirty(isFormDirty(data, initialValues as Record<string, unknown>));
+      } else setIsDirty(true);
+    });
+
+    return () => subscription.unsubscribe(); // Cleanup on unmount
+  }, [initialValues, reset, setIsDirty, setUserData, watch]);
 
   return (
     <>
@@ -212,8 +225,16 @@ const NotificationForm = ({ initialValues, onSubmit }: INotificationForm) => {
           w="194px"
           h="46px"
           onClick={onSubmit}
-          isDisabled={!userValidity}
+          isDisabled={!userValidity || !isDirty}
         >
+          {isLoading && (
+            <CircularProgress
+              isIndeterminate
+              color="white"
+              mr={1}
+              sx={{ svg: { w: '24px' } }}
+            />
+          )}
           {id ? 'Update' : 'Add'} User
         </Button>
       </Flex>

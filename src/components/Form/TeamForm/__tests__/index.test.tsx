@@ -68,4 +68,10 @@ describe('TeamForm Component', () => {
 
     expect(screen.queryByText(/is required/i)).toBeNull();
   });
+
+  it('should match snapshot', () => {
+    const container = renderComponent();
+
+    expect(container).toMatchSnapshot();
+  });
 });

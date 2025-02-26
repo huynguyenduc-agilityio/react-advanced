@@ -8,7 +8,7 @@ const onPageChangeMock = jest.fn();
 const onChangeLimitMock = jest.fn();
 
 describe('Pagination render', () => {
-  it('Should match snapshot.', () => {
+  it('should match snapshot', () => {
     const { container } = render(
       <Pagination
         currentPage={1}

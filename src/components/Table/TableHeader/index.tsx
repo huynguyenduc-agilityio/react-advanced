@@ -5,6 +5,9 @@ import { Checkbox, Flex, Icon, Text, Th, Tr } from '@chakra-ui/react';
 // Types
 import { THeaderTable } from '@/types';
 
+// Components
+import { SortIcon } from '@/components/Icons';
+
 interface TableHeadProps {
   isAllSelected: boolean;
   isIndeterminate: boolean;
@@ -31,7 +34,7 @@ const TableHeader = ({
     </Th>
 
     {!!columns.length &&
-      columns.map(({ key, title, icon }) => (
+      columns.map(({ key, title, icon, isSort }) => (
         <Th key={key} py={4} textAlign="left" fontFamily="MonaSans-Regular">
           <Flex alignItems="center" gap={1}>
             {icon && <Icon as={icon} boxSize={3} color="pastelBlue" />}
@@ -43,6 +46,7 @@ const TableHeader = ({
             >
               {title}
             </Text>
+            {isSort && <SortIcon />}
           </Flex>
         </Th>
       ))}

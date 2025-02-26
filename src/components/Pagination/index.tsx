@@ -66,10 +66,6 @@ const Pagination = ({
             fontSize="xs"
             color="pastelBlue"
             w="fit-content"
-            _focus={{
-              borderColor: 'primary',
-              boxShadow: 'none',
-            }}
           >
             {OPTION_LIMITS.map(({ value, label }) => (
               <option key={value} value={value}>
@@ -80,6 +76,7 @@ const Pagination = ({
         </Flex>
         <Flex justifyContent="space-between" alignItems="center" gap={2}>
           <Button
+            variant="icon"
             title="prev-button"
             bg="darkBlue"
             border="1px solid"
@@ -94,6 +91,7 @@ const Pagination = ({
             <Icon as={FiArrowLeft} boxSize={3} color="whiteSmoke" />
           </Button>
           <Button
+            variant="icon"
             title="next-button"
             bg="darkBlue"
             border="1px solid"

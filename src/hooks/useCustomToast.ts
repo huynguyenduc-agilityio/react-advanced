@@ -1,7 +1,7 @@
 import { useToast } from '@chakra-ui/react';
 
-// Enums
-import { ToastStatus } from '@/enums';
+// Types
+import { ToastStatus } from '@/types';
 
 interface ICustomToastProps {
   status: ToastStatus;

@@ -1,3 +1,5 @@
+import { lazy } from 'react';
+
 // Types
 import { IRoute } from '@/types';
 
@@ -5,7 +7,9 @@ import { IRoute } from '@/types';
 import { PUBLIC_ROUTERS } from '@/constants';
 
 // Pages
-import { Dashboard, NotFound, UserForm } from '@/pages';
+const Dashboard = lazy(() => import('@/pages/Dashboard'));
+const UserForm = lazy(() => import('@/pages/UserForm'));
+const NotFound = lazy(() => import('@/pages/NotFound'));
 
 export const PUBLIC_ROUTES: IRoute[] = [
   {

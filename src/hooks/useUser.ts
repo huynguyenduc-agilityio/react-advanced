@@ -13,8 +13,8 @@ import {
 // Constants
 import { ERROR_MESSAGES, SUCCESS_MESSAGES, usersQueryKeys } from '@/constants';
 
-// Enums
-import { ToastStatus } from '@/enums';
+// Types
+import { ToastStatus } from '@/types';
 
 // Components
 import { useCustomToast } from './useCustomToast';
@@ -34,10 +34,11 @@ export const useGetUsers = ({ page, pageSize, filter }: IUseUser) => {
   return { users, isUsersLoading };
 };
 
-export const useGetUser = (id: string) => {
+export const useGetUser = (id?: string) => {
   const { data: user, isFetching: isUserLoading } = useQuery({
     queryKey: [...usersQueryKeys.detail(id)] as const,
     queryFn: getUser,
+    enabled: !!id,
   });
 
   return { user, isUserLoading };

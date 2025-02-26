@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField Component matches the snapshot with an icon 1`] = `
+exports[`TextField Component should match the snapshot with an icon 1`] = `
 <DocumentFragment>
   <div
     class="chakra-form-control css-zol2i8"
@@ -49,7 +49,7 @@ exports[`TextField Component matches the snapshot with an icon 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextField Component matches the snapshot without icon and error 1`] = `
+exports[`TextField Component should match the snapshot without icon and error 1`] = `
 <DocumentFragment>
   <div
     class="chakra-form-control css-zol2i8"

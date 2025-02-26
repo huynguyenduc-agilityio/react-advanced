@@ -83,4 +83,10 @@ describe('PersonalForm Component', () => {
       expect(locationInput).toHaveValue('San Francisco');
     });
   });
+
+  it('should match snapshot', () => {
+    const container = renderComponent();
+
+    expect(container).toMatchSnapshot();
+  });
 });

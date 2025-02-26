@@ -1,8 +1,8 @@
 import { Flex } from '@chakra-ui/react';
 import { StoryObj, Meta } from '@storybook/react';
+import { HiMiniPencil } from 'react-icons/hi2';
 
 import TextareaField from '.';
-import { HiMiniPencil } from 'react-icons/hi2';
 
 const defaultProps = {
   label: 'Description',
@@ -35,12 +35,5 @@ type Story = StoryObj<typeof TextareaField>;
 export const Default: Story = {
   args: {
     ...defaultProps,
-  },
-};
-
-export const WithError: Story = {
-  args: {
-    ...defaultProps,
-    isError: true,
   },
 };

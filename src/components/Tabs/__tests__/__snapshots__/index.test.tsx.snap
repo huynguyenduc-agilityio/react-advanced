@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tabs component renders correctly and matches snapshot (only tabs structure) 1`] = `
+exports[`Tabs component should match snapshot 1`] = `
 <div
   class="chakra-tabs css-79elbk"
 >
@@ -27,7 +27,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
     >
       <svg
         aria-hidden="true"
-        class="chakra-icon css-cquj4k"
+        class="chakra-icon css-zdliob"
         fill="currentColor"
         focusable="false"
         height="1em"
@@ -42,7 +42,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
         />
       </svg>
       <p
-        class="chakra-text css-504jus"
+        class="chakra-text css-1mitela"
       >
         Personal Information
       </p>
@@ -59,7 +59,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
       type="button"
     >
       <svg
-        class="chakra-icon css-cquj4k"
+        class="chakra-icon css-zdliob"
         fill="currentColor"
         focusable="false"
         height="1em"
@@ -74,7 +74,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
         />
       </svg>
       <p
-        class="chakra-text css-504jus"
+        class="chakra-text css-1mitela"
       >
         Team
       </p>
@@ -91,7 +91,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
       type="button"
     >
       <svg
-        class="chakra-icon css-cquj4k"
+        class="chakra-icon css-zdliob"
         fill="currentColor"
         focusable="false"
         height="1em"
@@ -106,7 +106,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
         />
       </svg>
       <p
-        class="chakra-text css-504jus"
+        class="chakra-text css-1mitela"
       >
         Billing
       </p>
@@ -123,7 +123,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
       type="button"
     >
       <svg
-        class="chakra-icon css-cquj4k"
+        class="chakra-icon css-zdliob"
         fill="currentColor"
         focusable="false"
         height="1em"
@@ -138,7 +138,7 @@ exports[`Tabs component renders correctly and matches snapshot (only tabs struct
         />
       </svg>
       <p
-        class="chakra-text css-504jus"
+        class="chakra-text css-1mitela"
       >
         Notifications
       </p>

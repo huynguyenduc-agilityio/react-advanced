@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 import MainLayout from '@/layouts/MainLayout';
 
 describe('MainLayout', () => {
-  it('renders correctly and matches snapshot', () => {
+  it('should match snapshot', () => {
     const { asFragment } = render(
       <MemoryRouter>
         <MainLayout />

@@ -1,3 +1,4 @@
+export * from './Icons';
 export { default as CardSummary } from './CardSummary';
 export { default as Navbar } from './Navbar';
 export { default as SearchBox } from './SearchBox';
@@ -11,4 +12,4 @@ export { default as UploadImage } from './UploadImage';
 export { default as ErrorBoundary } from './ErrorBoundary';
 export { default as Fallback } from './Fallback';
 export { default as Pagination } from './Pagination';
-export { default as ConfirmDialog } from './AlertDialog';
+export { default as ConfirmDialog } from './ConfirmDialog';

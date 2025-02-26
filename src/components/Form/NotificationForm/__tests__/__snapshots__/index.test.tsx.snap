@@ -1,0 +1,1061 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationForm should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="chakra-stack css-1te3g49"
+  >
+    <div
+      class="chakra-stack css-1msb1n6"
+    >
+      <div
+        class="css-0"
+      >
+        <label
+          class="chakra-form__label css-s9gtqk"
+        >
+          General notifications
+        </label>
+        <div
+          class="css-hzjs2w"
+        >
+          Lorem ipsum dolor sit amet consectetur adipiscing.
+        </div>
+      </div>
+      <form
+        class="chakra-stack css-r22mao"
+      >
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="mentionMessage"
+                id="field-:r28:-label"
+              >
+                I’m mentioned in a message
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-1rr4qq7"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-69jna4"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="chakra-switch__input"
+                    id="field-:r28:"
+                    name="mentionMessage"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-3yh9qc"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="replyMessage"
+                id="field-:r2b:-label"
+              >
+                Someone replies to any message
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-1rr4qq7"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-1ilk955"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  data-checked=""
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    checked=""
+                    class="chakra-switch__input"
+                    id="field-:r2b:"
+                    name="replyMessage"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                    data-checked=""
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                      data-checked=""
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-7uovie"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="assignTask"
+                id="field-:r2e:-label"
+              >
+                I’m assigned a task
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-1rr4qq7"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-1ilk955"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  data-checked=""
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    checked=""
+                    class="chakra-switch__input"
+                    id="field-:r2e:"
+                    name="assignTask"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                    data-checked=""
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                      data-checked=""
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-7uovie"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="taskOverdue"
+                id="field-:r2h:-label"
+              >
+                A task is overdue
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-1rr4qq7"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-69jna4"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="chakra-switch__input"
+                    id="field-:r2h:"
+                    name="taskOverdue"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-3yh9qc"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="chakra-stack css-1msb1n6"
+    >
+      <div
+        class="css-0"
+      >
+        <label
+          class="chakra-form__label css-s9gtqk"
+        >
+          Summary notifications
+        </label>
+        <div
+          class="css-hzjs2w"
+        >
+          Lorem ipsum dolor sit amet consectetur adipiscing.
+        </div>
+      </div>
+      <form
+        class="chakra-stack css-suj7nf"
+      >
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="dailySummary"
+                id="field-:r2k:-label"
+              >
+                Daily summary
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-16qtta4"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-1ilk955"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  data-checked=""
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    checked=""
+                    class="chakra-switch__input"
+                    id="field-:r2k:"
+                    name="dailySummary"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                    data-checked=""
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                      data-checked=""
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-7uovie"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="weeklySummary"
+                id="field-:r2n:-label"
+              >
+                Weekly summary
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-16qtta4"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-69jna4"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="chakra-switch__input"
+                    id="field-:r2n:"
+                    name="weeklySummary"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-3yh9qc"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="monthlySummary"
+                id="field-:r2q:-label"
+              >
+                Monthly summary
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-16qtta4"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-69jna4"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="chakra-switch__input"
+                    id="field-:r2q:"
+                    name="monthlySummary"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-3yh9qc"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="chakra-form-control css-1olyxy2"
+          role="group"
+        >
+          <div
+            class="css-70qvj9"
+          >
+            <div
+              class="css-peq89d"
+            >
+              <label
+                class="chakra-form__label css-12d896p"
+                for="annuallySummary"
+                id="field-:r2t:-label"
+              >
+                Annually summary
+              </label>
+              <div
+                class="css-0"
+              >
+                <svg
+                  class="chakra-icon css-kpy8va"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="css-16qtta4"
+            >
+              <div
+                class="css-1oco7to"
+              >
+                <div
+                  class="css-1ilk955"
+                >
+                  <svg
+                    fill="none"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    width="14"
+                  >
+                    <path
+                      d="M10.0002 0.630859H4.00024C3.60293 0.632505 3.22235 0.791068 2.9414 1.07202C2.66045 1.35297 2.50189 1.73354 2.50024 2.13086V13.1309C2.50189 13.5282 2.66045 13.9088 2.9414 14.1897C3.22235 14.4707 3.60293 14.6292 4.00024 14.6309H10.0002C10.3976 14.6292 10.7781 14.4707 11.0591 14.1897C11.34 13.9088 11.4986 13.5282 11.5002 13.1309V2.13086C11.4986 1.73354 11.34 1.35297 11.0591 1.07202C10.7781 0.791068 10.3976 0.632505 10.0002 0.630859ZM7.00024 4.13086C6.85191 4.13086 6.7069 4.08687 6.58357 4.00446C6.46023 3.92205 6.3641 3.80492 6.30733 3.66787C6.25057 3.53083 6.23572 3.38003 6.26465 3.23454C6.29359 3.08906 6.36502 2.95542 6.46991 2.85053C6.5748 2.74564 6.70844 2.67421 6.85393 2.64527C6.99941 2.61633 7.15021 2.63118 7.28726 2.68795C7.4243 2.74472 7.54143 2.84084 7.62385 2.96418C7.70626 3.08752 7.75024 3.23252 7.75024 3.38086C7.75024 3.57977 7.67123 3.77054 7.53057 3.91119C7.38992 4.05184 7.19916 4.13086 7.00024 4.13086Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    In-app
+                  </p>
+                </div>
+                <label
+                  class="chakra-switch css-ghot30"
+                  data-checked=""
+                  hidden=""
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    checked=""
+                    class="chakra-switch__input"
+                    id="field-:r2t:"
+                    name="annuallySummary"
+                    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                    type="checkbox"
+                    value=""
+                  />
+                  <span
+                    aria-hidden="true"
+                    class="chakra-switch__track css-v4l15v"
+                    data-checked=""
+                  >
+                    <span
+                      class="chakra-switch__thumb css-6bli37"
+                      data-checked=""
+                    />
+                  </span>
+                </label>
+                <div
+                  class="css-7uovie"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="chakra-icon css-13otjrl"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  <p
+                    class="chakra-text css-itvw0n"
+                  >
+                    Email
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="css-140hfeg"
+  >
+    <button
+      class="chakra-button css-1lyqpgo"
+      disabled=""
+      type="button"
+    >
+      Add User
+    </button>
+  </div>
+  <span
+    hidden=""
+    id="__chakra_env"
+  />
+</DocumentFragment>
+`;

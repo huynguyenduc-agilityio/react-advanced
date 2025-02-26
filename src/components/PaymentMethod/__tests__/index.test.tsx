@@ -41,4 +41,12 @@ describe('PaymentMethod Component', () => {
     fireEvent.click(getByRole('radio', { name: /Mastercard/i }));
     expect(handleChange).toHaveBeenCalledTimes(1);
   });
+
+  it('should match snapshot', () => {
+    const { container } = render(
+      <PaymentMethod options={PAYMENT_METHODS} value="credit" />,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -9,6 +9,7 @@ export type THeaderTable = {
   title?: string;
   key?: string;
   icon?: ElementType;
+  isSort?: boolean;
   renderBody?: (_: TDataSource, index?: number) => JSX.Element;
 };
 

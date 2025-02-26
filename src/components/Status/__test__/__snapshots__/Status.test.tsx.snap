@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status Component should match snapshot 1`] = `
+<div>
+  <div
+    class="css-1i6zq7o"
+  >
+    <svg
+      fill="none"
+      height="4"
+      viewBox="0 0 4 4"
+      width="4"
+    >
+      <circle
+        cx="2.4375"
+        cy="1.59375"
+        fill="#05C168"
+        r="1.5"
+      />
+    </svg>
+    <p
+      class="chakra-text css-1k5z805"
+    >
+      Online
+    </p>
+  </div>
+</div>
+`;

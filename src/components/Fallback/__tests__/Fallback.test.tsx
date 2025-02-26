@@ -4,8 +4,9 @@ import { render } from '@testing-library/react';
 import Fallback from '..';
 
 describe('Fallback Component', () => {
-  it('should render correctly', () => {
+  it('should match snapshot', () => {
     const element = render(<Fallback />);
+
     expect(element).toMatchSnapshot();
   });
 });

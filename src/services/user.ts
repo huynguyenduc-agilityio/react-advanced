@@ -4,10 +4,7 @@ import { QueryFunctionContext } from '@tanstack/react-query';
 import { API_PATHS, HTTP_METHOD, usersQueryKeys } from '@/constants';
 
 // Types
-import { IUserModel } from '@/types';
-
-// Enums
-import { Status as StatusEnum } from '@/enums';
+import { IUserModel, Status as StatusEnum } from '@/types';
 
 // Services
 import { apiRequest } from '@/services';

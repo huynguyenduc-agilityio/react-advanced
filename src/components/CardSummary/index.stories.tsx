@@ -1,10 +1,11 @@
+import { Box, Flex } from '@chakra-ui/react';
 import type { Meta, StoryObj } from '@storybook/react';
+
+// Icons
+import { HeartIcon, KebabIcon, UserGroupIcon, UserIcon } from '@/components';
 
 // Components
 import CardSummary from '.';
-
-// Icons
-import { HeartIcon, KebabIcon, UserGroupIcon, UserIcon } from '@/icons';
 
 const meta = {
   title: 'Components/CardSummary',
@@ -14,6 +15,13 @@ const meta = {
   },
 
   tags: ['autodocs'],
+  render: (args) => (
+    <Flex justifyContent="center" w="1000px" p={9} bgColor="spaceBlue">
+      <Box w="243px">
+        <CardSummary {...args} />
+      </Box>
+    </Flex>
+  ),
 } satisfies Meta<typeof CardSummary>;
 
 export default meta;

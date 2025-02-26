@@ -6,10 +6,10 @@ import SearchBox from '..';
 const mockOnChange = jest.fn();
 
 describe('SearchBox Component', () => {
-  it('match SearchBox component', () => {
-    const element = render(<SearchBox onChange={mockOnChange} />);
+  it('should match snapshot', () => {
+    const { container } = render(<SearchBox onChange={mockOnChange} />);
 
-    expect(element).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it('should render input with placeholder', () => {

@@ -9,7 +9,7 @@ import { PUBLIC_ROUTERS } from '@/constants';
 import NotFound from '..';
 
 describe('NotFound Page', () => {
-  test('should render correctly', () => {
+  test('should match snapshot', () => {
     const view = render(
       <BrowserRouter>
         <NotFound />
