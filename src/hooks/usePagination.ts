@@ -3,7 +3,7 @@ import { useCallback } from 'react';
 export const usePagination = (
   pageCount: number,
   currentPage: number,
-  setCurrentPage: React.Dispatch<React.SetStateAction<number>>,
+  setCurrentPage: (page: number) => void,
   setPageSize: React.Dispatch<React.SetStateAction<number>>,
 ) => {
   const isDisablePrev = currentPage <= 1;

@@ -89,12 +89,11 @@
     - `$ git clone https://gitlab.asoft-python.com/huy.nguyenduc/react-trainning.git`.
   - With SSH:
     - `$ git clone git@gitlab.asoft-python.com:huy.nguyenduc/react-trainning.git`.
-- Step 2: Move to the folder which is just cloned on your computer.
-  - `cd ./react-training`.
-- Step 3: Change a branch to `develop`
-  - `git checkout develop`.
-- Step 4: Move to the folder advanced-practice.
+- Step 2: Change a branch to feature/advanced-practice
+  - `git checkout feature/advanced-practice`.
+- Step 3: Move to the folder advanced-practice.
   - `cd ./advanced-practice`.
+- Step 4: Create file `.env` and provide variables according to `.env.example`.
 - Step 5:
   - Open terminal > `pnpm i`.
   - Run `pnpm run dev` to start application.

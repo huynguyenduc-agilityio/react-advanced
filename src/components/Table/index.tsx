@@ -11,6 +11,7 @@ import {
   Tr,
 } from '@chakra-ui/react';
 import { memo, useCallback, useMemo, useState } from 'react';
+import isEqual from 'react-fast-compare';
 
 // Types
 import { TDataSource, THeaderTable, ToastStatus } from '@/types';
@@ -50,6 +51,7 @@ const Table = ({
     () => processTableData(columns, dataSource),
     [columns, dataSource],
   );
+
   const showToast = useCustomToast();
   const { confirm } = useConfirmationDialog();
   const { handleDeleteMultipleUsers, isDeleteMultipleLoading } =
@@ -62,18 +64,21 @@ const Table = ({
   // Handle single row selection
   const handleRowSelect = useCallback(
     (rowId: string) => {
-      const updatedSelectedRows = new Set(selectedRows);
+      setSelectedRows((prevSelectedRows) => {
+        const updatedSelectedRows = new Set(prevSelectedRows);
 
-      if (updatedSelectedRows.has(rowId)) {
-        updatedSelectedRows.delete(rowId);
-      } else {
-        updatedSelectedRows.add(rowId);
-      }
+        if (updatedSelectedRows.has(rowId)) {
+          updatedSelectedRows.delete(rowId);
+        } else {
+          updatedSelectedRows.add(rowId);
+        }
 
-      setSelectedRows(updatedSelectedRows);
-      setIsAllSelected(updatedSelectedRows.size === processedData.length);
+        setIsAllSelected(updatedSelectedRows.size === processedData.length);
+
+        return updatedSelectedRows;
+      });
     },
-    [processedData.length, selectedRows],
+    [processedData.length],
   );
 
   // Handle "Select All" checkbox
@@ -243,4 +248,4 @@ const Table = ({
   );
 };
 
-export default memo(Table);
+export default memo(Table, isEqual);

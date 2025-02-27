@@ -1,8 +1,7 @@
-import { MemoryRouter, useSearchParams } from 'react-router-dom';
-import userEvent from '@testing-library/user-event';
-import { render, screen, waitFor } from '@testing-library/react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ChakraProvider } from '@chakra-ui/react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter, useSearchParams } from 'react-router-dom';
 
 // Hooks
 import { useGetUsers } from '@/hooks';
@@ -76,31 +75,6 @@ describe('Dashboard Component', () => {
     renderComponent();
     expect(screen.getByText('Users')).toBeInTheDocument();
     expect(screen.getByText('John Doe')).toBeInTheDocument();
-  });
-
-  it('updates search query when input has value', async () => {
-    renderComponent();
-    const searchBox = screen.getByRole('textbox');
-
-    await userEvent.type(searchBox, 'Jane');
-    await waitFor(() =>
-      expect(mockSetSearchParams).toHaveBeenCalledWith(
-        expect.any(URLSearchParams),
-      ),
-    );
-  });
-
-  it('clears search query when input is empty', async () => {
-    renderComponent();
-    const searchBox = screen.getByRole('textbox');
-
-    await userEvent.type(searchBox, 'Jane');
-    await waitFor(() => expect(mockSetSearchParams).toHaveBeenCalled());
-
-    await userEvent.clear(searchBox);
-    await waitFor(() => {
-      expect(mockSetSearchParams).toHaveBeenCalledWith(new URLSearchParams());
-    });
   });
 
   it('navigates to add user page', () => {

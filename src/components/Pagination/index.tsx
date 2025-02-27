@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import isEqual from 'react-fast-compare';
 import { Button, Flex, Icon, Select, Text } from '@chakra-ui/react';
 
 // Icons
@@ -111,4 +112,4 @@ const Pagination = ({
   );
 };
 
-export default memo(Pagination);
+export default memo(Pagination, isEqual);

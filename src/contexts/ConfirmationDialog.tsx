@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useCallback,
+  useContext,
+  useState,
+} from 'react';
 import { useDisclosure } from '@chakra-ui/react';
 
 type DialogProps = {
@@ -37,10 +43,13 @@ const ConfirmationDialogProvider = ({ children }: { children: ReactNode }) => {
   const [confirmInfo, setConfirmInfo] = useState(initialValue);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const handleConfirm = (dialogInfo: DialogProps) => {
-    setConfirmInfo(dialogInfo);
-    onOpen();
-  };
+  const handleConfirm = useCallback(
+    (dialogInfo: DialogProps) => {
+      setConfirmInfo(dialogInfo);
+      onOpen();
+    },
+    [onOpen],
+  );
 
   return (
     <ConfirmationDialogContext.Provider

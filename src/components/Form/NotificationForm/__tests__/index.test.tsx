@@ -1,12 +1,15 @@
 import { ReactNode } from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { FormProvider, useForm } from 'react-hook-form';
 
 // Types
 import { IUserModel, NotificationType } from '@/types';
 
 // Components
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
 import NotificationForm from '..';
 
 interface WrapperProps {
@@ -14,16 +17,22 @@ interface WrapperProps {
   initialValues?: Partial<IUserModel>;
 }
 
-const Wrapper = ({ children, initialValues = {} }: WrapperProps) => {
-  const methods = useForm<IUserModel>({ defaultValues: initialValues });
-  return (
-    <ChakraProvider>
-      <FormProvider {...methods}>{children}</FormProvider>
-    </ChakraProvider>
-  );
-};
-
 describe('NotificationForm', () => {
+  const queryClient = new QueryClient();
+
+  const Wrapper = ({ children, initialValues = {} }: WrapperProps) => {
+    const methods = useForm<IUserModel>({ defaultValues: initialValues });
+
+    return (
+      <QueryClientProvider client={queryClient}>
+        <ChakraProvider>
+          <MemoryRouter initialEntries={['/dashboard']}>
+            <FormProvider {...methods}>{children}</FormProvider>
+          </MemoryRouter>
+        </ChakraProvider>
+      </QueryClientProvider>
+    );
+  };
   test('renders General and Summary sections correctly', () => {
     render(
       <Wrapper>

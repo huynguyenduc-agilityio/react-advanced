@@ -1,4 +1,4 @@
-import { ChangeEvent, forwardRef, memo } from 'react';
+import { ChangeEvent, forwardRef, useCallback } from 'react';
 import { IconType } from 'react-icons';
 import {
   Box,
@@ -33,8 +33,12 @@ const TextField = forwardRef<HTMLInputElement, TTextFieldProps>(
     },
     ref,
   ) => {
-    const handleChangeValue = (e: ChangeEvent<HTMLInputElement>): void =>
-      onChange(e.target.value);
+    const handleChangeValue = useCallback(
+      (e: ChangeEvent<HTMLInputElement>) => {
+        onChange(e.target.value);
+      },
+      [onChange],
+    );
 
     return (
       <FormControl my={6} isRequired={isRequired} isInvalid={isError}>
@@ -72,4 +76,4 @@ const TextField = forwardRef<HTMLInputElement, TTextFieldProps>(
   },
 );
 
-export default memo(TextField);
+export default TextField;

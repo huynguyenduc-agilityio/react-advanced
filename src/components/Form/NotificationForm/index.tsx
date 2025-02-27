@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useCallback, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import {
   Box,
   Button,
@@ -20,7 +20,11 @@ import { MdInfo } from 'react-icons/md';
 import { IUserNotifications, NotificationType } from '@/types';
 
 // Constants
-import { GENERAL_FORM_FIELD, SUMMARY_FORM_FIELD } from '@/constants';
+import {
+  GENERAL_FORM_FIELD,
+  PUBLIC_ROUTERS,
+  SUMMARY_FORM_FIELD,
+} from '@/constants';
 
 // Stores
 import { useUserForm, useUserFormActions } from '@/stores';
@@ -28,23 +32,27 @@ import { useUserForm, useUserFormActions } from '@/stores';
 // Utils
 import { isFormDirty } from '@/utils';
 
+// Hooks
+import { useCreateUser, useUpdateUser } from '@/hooks';
+
 // Components
 import NotificationSwitch from '@/components/NotificationSwitch';
 
 export interface INotificationForm {
   initialValues?: IUserNotifications;
-  isLoading?: boolean;
-  onSubmit?: () => void;
 }
 
-const NotificationForm = ({
-  initialValues,
-  isLoading,
-  onSubmit,
-}: INotificationForm) => {
+const NotificationForm = ({ initialValues }: INotificationForm) => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const { userValidity, isDirty } = useUserForm();
-  const { setUserData, setIsDirty } = useUserFormActions();
+  const { user } = useUserForm();
+  const { handleCreateUser, isCreateLoading } = useCreateUser();
+  const { handleUpdateUser, isUpdateLoading } = useUpdateUser();
+  const { setUserData, setIsDirty, resetUserForm } = useUserFormActions();
+
+  const actionForm = id ? handleUpdateUser : handleCreateUser;
+  const isLoading = isCreateLoading || isUpdateLoading;
 
   const {
     mentionMessage = NotificationType.InApp,
@@ -73,6 +81,12 @@ const NotificationForm = ({
     reValidateMode: 'onChange',
     defaultValues: defaultValue,
   });
+
+  const handleSubmit = useCallback(async () => {
+    await actionForm(user);
+    resetUserForm();
+    navigate(PUBLIC_ROUTERS.ROOT);
+  }, [user, actionForm, resetUserForm, navigate]);
 
   useEffect(() => {
     if (initialValues) {
@@ -224,7 +238,7 @@ const NotificationForm = ({
           fontSize="lg"
           w="194px"
           h="46px"
-          onClick={onSubmit}
+          onClick={handleSubmit}
           isDisabled={!userValidity || !isDirty}
         >
           {isLoading && (

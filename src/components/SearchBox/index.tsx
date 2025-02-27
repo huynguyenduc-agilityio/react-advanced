@@ -1,4 +1,4 @@
-import { ChangeEvent, memo, useCallback } from 'react';
+import { ChangeEvent, useCallback } from 'react';
 import {
   Icon,
   Input,
@@ -40,4 +40,4 @@ const SearchBox = ({ onChange, ...rest }: TSearchBoxProps) => {
   );
 };
 
-export default memo(SearchBox);
+export default SearchBox;

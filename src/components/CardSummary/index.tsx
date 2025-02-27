@@ -1,4 +1,5 @@
 import { memo, ReactNode } from 'react';
+import isEqual from 'react-fast-compare';
 import { VscKebabVertical } from 'react-icons/vsc';
 import { Box, Flex, Icon, Text } from '@chakra-ui/react';
 
@@ -36,4 +37,4 @@ const CardSummary = ({ title, total, icon }: CardSummaryProps) => {
   );
 };
 
-export default memo(CardSummary);
+export default memo(CardSummary, isEqual);
