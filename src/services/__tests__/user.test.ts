@@ -55,7 +55,10 @@ describe('User Service', () => {
   });
 
   test('getUsers should return users with status Offline', async () => {
-    const mockOfflineUser = { ...mockInitialValuesUser, status: false };
+    const mockOfflineUser = {
+      ...mockInitialValuesUser,
+      status: StatusEnum.Offline,
+    };
     (apiRequest as jest.Mock).mockResolvedValue([mockOfflineUser]);
 
     const queryKey = [

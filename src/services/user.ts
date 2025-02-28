@@ -4,7 +4,7 @@ import { QueryFunctionContext } from '@tanstack/react-query';
 import { API_PATHS, HTTP_METHOD, usersQueryKeys } from '@/constants';
 
 // Types
-import { IUserModel, Status as StatusEnum } from '@/types';
+import { IUserModel } from '@/types';
 
 // Services
 import { apiRequest } from '@/services';
@@ -27,7 +27,7 @@ export const getUsers = async ({
   const formatItems = paginatedItems.map((data) => {
     return {
       ...data,
-      status: data.status ? StatusEnum.Online : StatusEnum.Offline,
+      status: data.status,
     };
   });
 

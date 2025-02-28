@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {
   Box,
@@ -65,34 +65,37 @@ const NotificationForm = ({ initialValues }: INotificationForm) => {
     annuallySummary = NotificationType.Email,
   } = initialValues || {};
 
-  const defaultValue: IUserNotifications = {
-    mentionMessage,
-    replyMessage,
-    assignTask,
-    taskOverdue,
-    dailySummary,
-    weeklySummary,
-    monthlySummary,
-    annuallySummary,
-  };
+  const defaultValues: IUserNotifications = useMemo(
+    () => ({
+      mentionMessage,
+      replyMessage,
+      assignTask,
+      taskOverdue,
+      dailySummary,
+      weeklySummary,
+      monthlySummary,
+      annuallySummary,
+    }),
+    [],
+  );
 
   const { control, watch, reset } = useForm<IUserNotifications>({
     mode: 'onChange',
     reValidateMode: 'onChange',
-    defaultValues: defaultValue,
+    defaultValues,
   });
 
   const handleSubmit = useCallback(async () => {
-    await actionForm(user);
+    const userForm = Object.assign({}, defaultValues, user);
+
+    await actionForm(userForm);
     resetUserForm();
     navigate(PUBLIC_ROUTERS.ROOT);
-  }, [user, actionForm, resetUserForm, navigate]);
+  }, [user, defaultValues, actionForm, resetUserForm, navigate]);
 
   useEffect(() => {
     if (initialValues) {
       reset(initialValues);
-    } else {
-      setUserData(defaultValue);
     }
 
     const subscription = watch((data) => {

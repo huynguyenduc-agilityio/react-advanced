@@ -27,7 +27,7 @@ import { useUserFormActions } from '@/stores';
 import TextField from '@/components/TextField';
 
 export interface ITeamFormProps {
-  initialValues?: IUserTeamInfo;
+  initialValues?: Partial<IUserTeamInfo>;
 }
 
 const TeamForm = ({ initialValues }: ITeamFormProps) => {

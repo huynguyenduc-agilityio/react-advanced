@@ -20,7 +20,7 @@ import { useUserFormActions } from '@/stores';
 import { PaymentMethod, TextField } from '@/components';
 
 export interface IBillForm {
-  initialValues?: IUserBillInfo;
+  initialValues?: Partial<IUserBillInfo>;
 }
 
 const BillForm = ({ initialValues }: IBillForm) => {

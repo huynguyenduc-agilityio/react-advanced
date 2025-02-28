@@ -60,8 +60,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rk:"
-                      id="field-:rk:-label"
+                      for="field-:rm:"
+                      id="field-:rm:-label"
                     >
                       Full name
                       <span
@@ -80,7 +80,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Full name"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rk:"
+                      id="field-:rm:"
                       name="name"
                       placeholder="Please enter name"
                       required=""
@@ -124,8 +124,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rl:"
-                      id="field-:rl:-label"
+                      for="field-:rn:"
+                      id="field-:rn:-label"
                     >
                       Email address
                       <span
@@ -144,7 +144,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Email address"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rl:"
+                      id="field-:rn:"
                       name="email"
                       placeholder="Please enter email"
                       required=""
@@ -180,8 +180,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-txj535"
-                      for="field-:rm:"
-                      id="field-:rm:-label"
+                      for="field-:ro:"
+                      id="field-:ro:-label"
                     >
                       Photo
                     </label>
@@ -255,6 +255,74 @@ exports[`PersonalForm Component should match snapshot 1`] = `
               </div>
             </div>
             <div
+              class="css-1wbjg3v"
+            >
+              <div
+                class="chakra-form-control css-1olyxy2"
+                role="group"
+              >
+                <div
+                  class="css-h38yef"
+                >
+                  <div
+                    class="css-qdbjwx"
+                  >
+                    <svg
+                      class="chakra-icon css-1bgoxul"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                      />
+                    </svg>
+                    <label
+                      class="chakra-form__label css-w7uoyq"
+                      for="field-:rq:"
+                      id="field-:rq:-label"
+                    >
+                      Status
+                    </label>
+                  </div>
+                  <div
+                    class="css-1rr4qq7"
+                  >
+                    <label
+                      class="chakra-switch css-1chb4nr"
+                      data-checked=""
+                    >
+                      <input
+                        aria-disabled="false"
+                        aria-invalid="false"
+                        checked=""
+                        class="chakra-switch__input"
+                        id="field-:rq:"
+                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                        type="checkbox"
+                        value=""
+                      />
+                      <span
+                        aria-hidden="true"
+                        class="chakra-switch__track css-v4l15v"
+                        data-checked=""
+                      >
+                        <span
+                          class="chakra-switch__thumb css-6bli37"
+                          data-checked=""
+                        />
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
               class="chakra-form-control css-1olyxy2"
               role="group"
             >
@@ -282,8 +350,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-e2qg4n"
-                    for="field-:ro:"
-                    id="field-:ro:-label"
+                    for="field-:rr:"
+                    id="field-:rr:-label"
                   >
                     Description
                   </label>
@@ -294,7 +362,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   <textarea
                     aria-label="description"
                     class="chakra-textarea css-1y43o19"
-                    id="field-:ro:"
+                    id="field-:rr:"
                     name="description"
                     placeholder="Write a short bio about you..."
                   />
@@ -353,8 +421,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rp:"
-                      id="field-:rp:-label"
+                      for="field-:rs:"
+                      id="field-:rs:-label"
                     >
                       Phone
                       <span
@@ -373,7 +441,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Phone"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rp:"
+                      id="field-:rs:"
                       name="phone"
                       placeholder="(123) 456-7890"
                       required=""
@@ -413,8 +481,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rq:"
-                      id="field-:rq:-label"
+                      for="field-:rt:"
+                      id="field-:rt:-label"
                     >
                       Position
                       <span
@@ -433,7 +501,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Position"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rq:"
+                      id="field-:rt:"
                       name="position"
                       placeholder="Please enter position"
                       required=""
@@ -476,8 +544,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rr:"
-                      id="field-:rr:-label"
+                      for="field-:ru:"
+                      id="field-:ru:-label"
                     >
                       Location
                       <span
@@ -496,7 +564,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Location"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rr:"
+                      id="field-:ru:"
                       name="location"
                       placeholder="Please enter location"
                       required=""
@@ -547,8 +615,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rs:"
-                      id="field-:rs:-label"
+                      for="field-:rv:"
+                      id="field-:rv:-label"
                     >
                       Website
                       <span
@@ -567,7 +635,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Website"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rs:"
+                      id="field-:rv:"
                       name="website"
                       placeholder="Please enter website"
                       required=""
@@ -607,8 +675,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     </svg>
                     <label
                       class="chakra-form__label css-w7uoyq"
-                      for="field-:rt:"
-                      id="field-:rt:-label"
+                      for="field-:r10:"
+                      id="field-:r10:-label"
                     >
                       Company
                       <span
@@ -627,7 +695,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                       aria-label="Company"
                       aria-required="true"
                       class="chakra-input css-1g101r8"
-                      id="field-:rt:"
+                      id="field-:r10:"
                       name="company"
                       placeholder="Please enter company"
                       required=""
@@ -746,8 +814,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rk:"
-                    id="field-:rk:-label"
+                    for="field-:rm:"
+                    id="field-:rm:-label"
                   >
                     Full name
                     <span
@@ -766,7 +834,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Full name"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rk:"
+                    id="field-:rm:"
                     name="name"
                     placeholder="Please enter name"
                     required=""
@@ -810,8 +878,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rl:"
-                    id="field-:rl:-label"
+                    for="field-:rn:"
+                    id="field-:rn:-label"
                   >
                     Email address
                     <span
@@ -830,7 +898,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Email address"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rl:"
+                    id="field-:rn:"
                     name="email"
                     placeholder="Please enter email"
                     required=""
@@ -866,8 +934,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-txj535"
-                    for="field-:rm:"
-                    id="field-:rm:-label"
+                    for="field-:ro:"
+                    id="field-:ro:-label"
                   >
                     Photo
                   </label>
@@ -941,6 +1009,74 @@ exports[`PersonalForm Component should match snapshot 1`] = `
             </div>
           </div>
           <div
+            class="css-1wbjg3v"
+          >
+            <div
+              class="chakra-form-control css-1olyxy2"
+              role="group"
+            >
+              <div
+                class="css-h38yef"
+              >
+                <div
+                  class="css-qdbjwx"
+                >
+                  <svg
+                    class="chakra-icon css-1bgoxul"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 448 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                    />
+                  </svg>
+                  <label
+                    class="chakra-form__label css-w7uoyq"
+                    for="field-:rq:"
+                    id="field-:rq:-label"
+                  >
+                    Status
+                  </label>
+                </div>
+                <div
+                  class="css-1rr4qq7"
+                >
+                  <label
+                    class="chakra-switch css-1chb4nr"
+                    data-checked=""
+                  >
+                    <input
+                      aria-disabled="false"
+                      aria-invalid="false"
+                      checked=""
+                      class="chakra-switch__input"
+                      id="field-:rq:"
+                      style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"
+                      type="checkbox"
+                      value=""
+                    />
+                    <span
+                      aria-hidden="true"
+                      class="chakra-switch__track css-v4l15v"
+                      data-checked=""
+                    >
+                      <span
+                        class="chakra-switch__thumb css-6bli37"
+                        data-checked=""
+                      />
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
             class="chakra-form-control css-1olyxy2"
             role="group"
           >
@@ -968,8 +1104,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                 </svg>
                 <label
                   class="chakra-form__label css-e2qg4n"
-                  for="field-:ro:"
-                  id="field-:ro:-label"
+                  for="field-:rr:"
+                  id="field-:rr:-label"
                 >
                   Description
                 </label>
@@ -980,7 +1116,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                 <textarea
                   aria-label="description"
                   class="chakra-textarea css-1y43o19"
-                  id="field-:ro:"
+                  id="field-:rr:"
                   name="description"
                   placeholder="Write a short bio about you..."
                 />
@@ -1039,8 +1175,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rp:"
-                    id="field-:rp:-label"
+                    for="field-:rs:"
+                    id="field-:rs:-label"
                   >
                     Phone
                     <span
@@ -1059,7 +1195,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Phone"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rp:"
+                    id="field-:rs:"
                     name="phone"
                     placeholder="(123) 456-7890"
                     required=""
@@ -1099,8 +1235,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rq:"
-                    id="field-:rq:-label"
+                    for="field-:rt:"
+                    id="field-:rt:-label"
                   >
                     Position
                     <span
@@ -1119,7 +1255,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Position"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rq:"
+                    id="field-:rt:"
                     name="position"
                     placeholder="Please enter position"
                     required=""
@@ -1162,8 +1298,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rr:"
-                    id="field-:rr:-label"
+                    for="field-:ru:"
+                    id="field-:ru:-label"
                   >
                     Location
                     <span
@@ -1182,7 +1318,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Location"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rr:"
+                    id="field-:ru:"
                     name="location"
                     placeholder="Please enter location"
                     required=""
@@ -1233,8 +1369,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rs:"
-                    id="field-:rs:-label"
+                    for="field-:rv:"
+                    id="field-:rv:-label"
                   >
                     Website
                     <span
@@ -1253,7 +1389,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Website"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rs:"
+                    id="field-:rv:"
                     name="website"
                     placeholder="Please enter website"
                     required=""
@@ -1293,8 +1429,8 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                   </svg>
                   <label
                     class="chakra-form__label css-w7uoyq"
-                    for="field-:rt:"
-                    id="field-:rt:-label"
+                    for="field-:r10:"
+                    id="field-:r10:-label"
                   >
                     Company
                     <span
@@ -1313,7 +1449,7 @@ exports[`PersonalForm Component should match snapshot 1`] = `
                     aria-label="Company"
                     aria-required="true"
                     class="chakra-input css-1g101r8"
-                    id="field-:rt:"
+                    id="field-:r10:"
                     name="company"
                     placeholder="Please enter company"
                     required=""

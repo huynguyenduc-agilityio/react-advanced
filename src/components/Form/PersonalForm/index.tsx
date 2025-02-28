@@ -5,6 +5,7 @@ import {
   FormControl,
   FormLabel,
   Icon,
+  Switch,
   VStack,
 } from '@chakra-ui/react';
 import { Controller, useForm } from 'react-hook-form';
@@ -13,12 +14,13 @@ import { valibotResolver } from '@hookform/resolvers/valibot';
 // Icons
 import { PhotoIcon } from '@/components';
 import { HiMiniPencil } from 'react-icons/hi2';
+import { FaUser } from 'react-icons/fa';
 
 // Constants
 import { BASIC_FORM_FIELD, PERSONAL_FORM_FIELD } from '@/constants';
 
 // Types
-import { IUserPersonalInfo } from '@/types';
+import { IUserPersonalInfo, Status } from '@/types';
 
 // Utils
 import { isFormDirty, personalFormSchema } from '@/utils';
@@ -32,11 +34,12 @@ import TextField from '@/components/TextField';
 import UploadImage from '@/components/UploadImage';
 
 export interface IPersonalForm {
-  initialValues?: IUserPersonalInfo;
+  initialValues?: Partial<IUserPersonalInfo>;
 }
 
 const PersonalForm = ({ initialValues }: IPersonalForm) => {
   const { setUserData, setFormValidity, setIsDirty } = useUserFormActions();
+
   const {
     name = '',
     email = '',
@@ -47,6 +50,7 @@ const PersonalForm = ({ initialValues }: IPersonalForm) => {
     position = '',
     website = '',
     company = '',
+    status = Status.Online,
   } = initialValues || {};
   const defaultValues: IUserPersonalInfo = {
     name,
@@ -58,6 +62,7 @@ const PersonalForm = ({ initialValues }: IPersonalForm) => {
     position,
     website,
     company,
+    status,
   };
 
   const { control, watch, setValue, formState, reset } =
@@ -88,7 +93,7 @@ const PersonalForm = ({ initialValues }: IPersonalForm) => {
       } else setIsDirty(true);
     });
 
-    return () => subscription.unsubscribe(); // Cleanup on unmount
+    return () => subscription.unsubscribe();
   }, [initialValues, reset, setIsDirty, setUserData, watch]);
 
   useEffect(() => {
@@ -170,6 +175,52 @@ const PersonalForm = ({ initialValues }: IPersonalForm) => {
                 </Box>
               </Flex>
             </FormControl>
+          </Box>
+
+          <Box
+            key={name}
+            w="full"
+            borderBottom="0.6px solid"
+            borderColor="slateBlue"
+          >
+            <Controller
+              control={control}
+              name="status"
+              render={({ field }) => (
+                <FormControl my={6}>
+                  <Flex align="start">
+                    <Flex align="center" mt={1}>
+                      <Icon as={FaUser} color="white" boxSize={3} />
+                      <FormLabel
+                        fontSize="sm"
+                        color="white"
+                        w="168px"
+                        textAlign="left"
+                        mb={0}
+                        ml={1}
+                      >
+                        Status
+                      </FormLabel>
+                    </Flex>
+                    <Box flex="1">
+                      <Switch
+                        isChecked={field.value === Status.Online}
+                        onChange={(e) =>
+                          field.onChange(
+                            e.target.checked ? Status.Online : Status.Offline,
+                          )
+                        }
+                        sx={{
+                          '.chakra-switch__track[data-checked]': {
+                            bg: 'primary',
+                          },
+                        }}
+                      />
+                    </Box>
+                  </Flex>
+                </FormControl>
+              )}
+            />
           </Box>
 
           <Controller

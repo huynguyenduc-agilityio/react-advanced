@@ -36,6 +36,35 @@ const UserForm = () => {
     if (userDetail) setUserData(userDetail);
   }, [userDetail, setUserData]);
 
+  const {
+    name,
+    email,
+    avatar,
+    description,
+    phone,
+    location,
+    position,
+    website,
+    company,
+    teamName,
+    rank,
+    office,
+    teamMail,
+    payment,
+    billName,
+    billAddress,
+    state,
+    zipCode,
+    mentionMessage,
+    replyMessage,
+    assignTask,
+    taskOverdue,
+    dailySummary,
+    weeklySummary,
+    monthlySummary,
+    annuallySummary,
+  } = userDetail || {};
+
   const TAB_LIST = useMemo(
     () => [
       {
@@ -43,7 +72,19 @@ const UserForm = () => {
         icon: HiMiniPencil,
         content: (
           <Suspense fallback={<Fallback />}>
-            <PersonalForm initialValues={userDetail} />
+            <PersonalForm
+              initialValues={{
+                name,
+                email,
+                avatar,
+                description,
+                phone,
+                location,
+                position,
+                website,
+                company,
+              }}
+            />
           </Suspense>
         ),
       },
@@ -52,7 +93,7 @@ const UserForm = () => {
         icon: FaUser,
         content: (
           <Suspense fallback={<Fallback />}>
-            <TeamForm initialValues={userDetail} />
+            <TeamForm initialValues={{ teamName, rank, office, teamMail }} />
           </Suspense>
         ),
       },
@@ -61,7 +102,9 @@ const UserForm = () => {
         icon: CardIcon,
         content: (
           <Suspense fallback={<Fallback />}>
-            <BillForm initialValues={userDetail} />
+            <BillForm
+              initialValues={{ payment, billName, billAddress, state, zipCode }}
+            />
           </Suspense>
         ),
       },
@@ -70,7 +113,18 @@ const UserForm = () => {
         icon: RiNotification2Fill,
         content: (
           <Suspense fallback={<Fallback />}>
-            <NotificationForm initialValues={userDetail} />
+            <NotificationForm
+              initialValues={{
+                mentionMessage,
+                replyMessage,
+                assignTask,
+                taskOverdue,
+                dailySummary,
+                weeklySummary,
+                monthlySummary,
+                annuallySummary,
+              }}
+            />
           </Suspense>
         ),
       },

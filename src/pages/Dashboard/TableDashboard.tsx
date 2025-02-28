@@ -63,7 +63,7 @@ const TableDashboard = ({
 
   const { handleChangeLimit, handleChangePage, isDisableNext, isDisablePrev } =
     usePagination(
-      users?.meta.pagination.pageCount ?? 0,
+      Number(users?.meta.pagination.pageCount),
       currentPage,
       onSetPage,
       setPageSize,
