@@ -1,6 +1,7 @@
 import {
   memo,
   useCallback,
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -45,6 +46,7 @@ const UploadImage = ({ imageUrl = '', onFileChange }: TUploadImageProps) => {
   const [selectedImageUrl, setSelectedImageUrl] = useState<string | null>(
     imageUrl,
   );
+
   const [isPending, startTransition] = useTransition();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const {
@@ -110,6 +112,10 @@ const UploadImage = ({ imageUrl = '', onFileChange }: TUploadImageProps) => {
     }
     setSelectedImageUrl(null);
   }, [selectedImageUrl]);
+
+  useEffect(() => {
+    setSelectedImageUrl(imageUrl);
+  }, [imageUrl]);
 
   const renderImage = useMemo(() => {
     if (isPending) {
