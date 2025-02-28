@@ -4,7 +4,7 @@ export const ERROR_MESSAGES = {
   INVALID_FILE_TYPE: 'File must be a PNG, JPEG, or JPG',
   EMPTY_DATA: 'No data found',
   INVALID_EMAIL: 'Invalid email address',
-  INVALID_PHONE: 'Please enter 10 digits starting with 0',
+  INVALID_PHONE: 'The number entered is not valid',
   DELETE_USER: 'An error occurred while deleting the user',
   ADD_USER: 'An error occurred while adding the user',
   UPDATE_USER: 'An error occurred while updating the user',
